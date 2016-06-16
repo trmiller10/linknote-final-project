@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
-<form>
-    <textarea rows="20" cols="70" name="textarea" placeholder="Enter note here"></textarea>
-    <br/>
+<form action="/add-note" method="post" id="textForm">
     <button type="submit">Add</button>
 </form>
+<textarea form="textForm" rows="20" cols="70" name="inputText" placeholder="Enter note here"></textarea>
+
+{{^notes}}
+    No notes here
+{{/notes}}
+
+{{#notes}}
+    {{id}}. {{noteText}}
+{{/notes}}
 </body>
 
 </html>
