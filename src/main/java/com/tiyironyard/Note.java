@@ -1,6 +1,8 @@
 package com.tiyironyard;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Taylor on 6/16/16.
@@ -15,14 +17,21 @@ public class Note {
 
     String noteText;
 
+    //Set<Tag> tags = new HashSet<Tag>();
+
+
+    public Note(){}
 
     public Note(int id, String noteText) {
         this.id = id;
         this.noteText = noteText;
     }
 
-    public Note(){}
-
+    /*public Note(String noteText, Set<Tag> tags) {
+        this.noteText = noteText;
+        this.tags = tags;
+    }
+*/
     public Note(String noteText){
         this.noteText = noteText;
     }
@@ -42,4 +51,12 @@ public class Note {
     public void setNoteText(String noteText) {
         this.noteText = noteText;
     }
+
+    /*public Set<Tag> getTags() {
+        return tags;
+    }
+
+    public void setTags(Set<Tag> tags) {
+        this.tags = tags;
+    }*/
 }

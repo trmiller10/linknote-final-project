@@ -2,7 +2,8 @@
 <html>
 <body>
 <form action="/add-note" method="post" id="textForm">
-    <button type="submit">Add</button>
+    Tags: <input type="text" name="tagName">
+    <button type="submit">Add Note and Tag</button>
 </form>
 <textarea form="textForm" rows="20" cols="70" name="inputText" placeholder="Enter note here"></textarea>
 
@@ -11,7 +12,9 @@
 {{/notes}}
 
 {{#notes}}
+    <li>
     {{id}}. {{noteText}}
+    </li>
 {{/notes}}
 </body>
 

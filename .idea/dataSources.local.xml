@@ -6,5 +6,11 @@
       <schema-pattern>finalproject.*</schema-pattern>
       <default-schemas>finalproject.*</default-schemas>
     </data-source>
+    <data-source name="H2 - test" uuid="39a9e27a-5be1-45ae-aca8-b3d55684d71c">
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <schema-pattern>TEST.PUBLIC</schema-pattern>
+      <default-schemas>TEST.PUBLIC</default-schemas>
+    </data-source>
   </component>
 </project>

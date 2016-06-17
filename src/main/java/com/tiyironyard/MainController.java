@@ -19,15 +19,23 @@ public class MainController {
     @Autowired
     NoteRepository noteRepository;
 
+    @Autowired
+    TagRepository tagRepository;
+
+    @Autowired
+    UserRepository userRepository;
+
+
     @RequestMapping(path="/", method = RequestMethod.GET)
     public String root(Model model){
 
 
-        return "login";
+        return "home";
     }
 
     @RequestMapping(path="/login", method = RequestMethod.GET)
     public String login(Model model){
+
 
         return "login";
     }
@@ -37,19 +45,24 @@ public class MainController {
 
         Iterable<Note> notes = noteRepository.findAll();
 
+        Iterable<Tag> tags = tagRepository.findAll();
+
         model.addAttribute("notes", notes);
         return "home";
     }
 
     @RequestMapping(path="/add-note", method = RequestMethod.POST)
-    public String addNote(String inputText){
+    public String addNote(String inputText, String tagName){
 
-    Note newNote = new Note(inputText);
+        Tag newTag = new Tag(tagName);
+        tagRepository.save(newTag);
 
-    noteRepository.save(newNote);
+        Note newNote = new Note(inputText);
+        noteRepository.save(newNote);
 
-    return "redirect:/home";
+        return "redirect:/home";
     }
+
     @RequestMapping(path="/list", method = RequestMethod.GET)
     public String list(Model model){
 
