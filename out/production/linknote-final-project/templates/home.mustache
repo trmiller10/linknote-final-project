@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
+{{#user}}
+    Welcome {{userEmail}}, {{id}}
+    <p><a href="/logout">Logout</a></p>
+{{/user}}
+{{^user}}
+    No user logged in.
+{{/user}}
 <form action="/add-note" method="post" id="textForm">
     Tags: <input type="text" name="tagName">
     <button type="submit">Add Note and Tag</button>
@@ -10,7 +17,12 @@
 {{^notes}}
     No notes here
 {{/notes}}
-
+{{^tags}}
+    No tags here
+{{/tags}}
+{{#tags}}
+    {{id}}. {{tagName}}
+{{/tags}}
 {{#notes}}
     <li>
     {{id}}. {{noteText}}

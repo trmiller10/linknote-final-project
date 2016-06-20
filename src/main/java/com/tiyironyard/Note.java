@@ -32,6 +32,11 @@ public class Note {
         this.id = id;
         this.noteText = noteText;
     }
+    public Note(String noteText, User user) {
+        this.id = id;
+        this.noteText = noteText;
+        this.user = user;
+    }
 
     /*public Note(String noteText, Set<Tag> tags) {
         this.noteText = noteText;
@@ -56,6 +61,14 @@ public class Note {
 
     public void setNoteText(String noteText) {
         this.noteText = noteText;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     /*public Set<Tag> getTags() {

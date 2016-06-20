@@ -33,6 +33,11 @@ public class Tag {
         this.tagName = tagName;
     }
 
+    public Tag(String tagName, User user) {
+        this.tagName = tagName;
+        this.user = user;
+    }
+
     public int getId() {
         return id;
     }
@@ -47,5 +52,13 @@ public class Tag {
 
     public void setTagName(String tagName) {
         this.tagName = tagName;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }
