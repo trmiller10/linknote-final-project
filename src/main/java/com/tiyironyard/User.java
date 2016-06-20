@@ -15,16 +15,16 @@ import java.util.Set;
 public class User {
     @Id
     @GeneratedValue
-    int id;
+    private int id;
 
-    String userEmail;
-    String password;
-
-    @OneToMany(mappedBy = "user")
-    Set<Tag> tags = new HashSet<>();
+    private String userEmail;
+    private String password;
 
     @OneToMany(mappedBy = "user")
-    List<Note> notes = new ArrayList<>();
+    private Set<Tag> tags = new HashSet<>();
+
+    @OneToMany(mappedBy = "user")
+    private List<Note> notes = new ArrayList<>();
 
     public User(){}
 
@@ -55,5 +55,21 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Set<Tag> getTags() {
+        return tags;
+    }
+
+    public void setTags(Set<Tag> tags) {
+        this.tags = tags;
+    }
+
+    public List<Note> getNotes() {
+        return notes;
+    }
+
+    public void setNotes(List<Note> notes) {
+        this.notes = notes;
     }
 }

@@ -1,6 +1,9 @@
 package com.tiyironyard;
 
 
+import java.util.List;
+import java.util.Set;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,15 +30,22 @@ public class MainController {
 
 
     @RequestMapping(path="/", method = RequestMethod.GET)
-    public String root(Model model){
+    public String root(HttpSession session, Model model){
+        User user = userRepository.findFirstByUserEmail((String)session.getAttribute("userEmail"));
 
-
-        return "home";
+        if(user != null){
+            return "redirect:/home";
+        }
+        return "login";
     }
 
     @RequestMapping(path="/login", method = RequestMethod.GET)
-    public String login(Model model){
+    public String login(Model model, HttpSession session){
+        User user = userRepository.findFirstByUserEmail((String)session.getAttribute("userEmail"));
 
+        if(user != null){
+            return "redirect:/home";
+        }
         return "login";
     }
 
@@ -47,6 +57,8 @@ public class MainController {
         if(user == null) {
             user = new User(userEmail, password);
             userRepository.save(user);
+        } else if(user != null){
+
         }
         session.setAttribute("userEmail", userEmail);
 
@@ -63,11 +75,11 @@ public class MainController {
     public String home(Model model, HttpSession session){
         User user = userRepository.findFirstByUserEmail((String)session.getAttribute("userEmail"));
 
-        if(user==null){
+        if(user == null){
             return "redirect:/login";
-        } else if (user!=null){
-            model.addAttribute("user", user);
         }
+
+        model.addAttribute("user", user);
 
         Iterable<Note> notes = noteRepository.findAll();
 
@@ -87,12 +99,31 @@ public class MainController {
         Tag newTag = new Tag();
         newTag.setTagName(tagName);
         newTag.setUser(user);
-        tagRepository.save(newTag);
 
         Note newNote = new Note();
         newNote.setNoteText(inputText);
         newNote.setUser(user);
+
+        List<Note> userNoteList = user.getNotes();
+        userNoteList.add(newNote);
+        user.setNotes(userNoteList);
+
+        Set<Tag> userTagList = user.getTags();
+        userTagList.add(newTag);
+        //user.setTags(userTagList);
+
+        List<Note> tagNoteList = newTag.getNotes();
+        tagNoteList.add(newNote);
+        //newTag.setNotes(tagNoteList);
+
+        Set<Tag> noteTagList = newNote.getTags();
+        noteTagList.add(newTag);
+        //newNote.setTags(noteTagList);
+
+        userRepository.save(user);
+        tagRepository.save(newTag);
         noteRepository.save(newNote);
+
 
         return "redirect:/home";
     }

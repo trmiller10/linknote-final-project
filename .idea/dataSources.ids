@@ -10,8 +10,8 @@
       <schema id="2" parent="1" name="public">
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
-        <introspection-state-number>5208</introspection-state-number>
-        <introspection-timestamp>2016-06-20.11:38:13.326</introspection-timestamp>
+        <introspection-state-number>5290</introspection-state-number>
+        <introspection-timestamp>2016-06-20.12:53:31.559</introspection-timestamp>
       </schema>
       <schema id="3" parent="1" name="pg_catalog">
         <object-id>11</object-id>
@@ -27,8 +27,8 @@
       <schema id="5" parent="1" name="pg_toast">
         <object-id>99</object-id>
         <comment>reserved schema for TOAST tables</comment>
-        <introspection-state-number>5203</introspection-state-number>
-        <introspection-timestamp>2016-06-20.11:38:13.534</introspection-timestamp>
+        <introspection-state-number>5285</introspection-state-number>
+        <introspection-timestamp>2016-06-20.12:53:31.753</introspection-timestamp>
       </schema>
       <schema id="6" parent="1" name="pg_toast_temp_1">
         <object-id>11817</object-id>
@@ -39,24 +39,24 @@
         <introspection-timestamp>2016-06-17.11:50:45.055</introspection-timestamp>
       </schema>
       <sequence id="8" parent="2" name="hibernate_sequence">
-        <object-id>41247</object-id>
-        <state-number>5208</state-number>
+        <object-id>41423</object-id>
+        <state-number>5290</state-number>
       </sequence>
       <table id="9" parent="2" name="note_tag">
-        <object-id>41204</object-id>
-        <state-number>5205</state-number>
+        <object-id>41380</object-id>
+        <state-number>5287</state-number>
       </table>
       <table id="10" parent="2" name="notes">
-        <object-id>41209</object-id>
-        <state-number>5206</state-number>
+        <object-id>41385</object-id>
+        <state-number>5288</state-number>
       </table>
       <table id="11" parent="2" name="tags">
-        <object-id>41214</object-id>
-        <state-number>5207</state-number>
+        <object-id>41390</object-id>
+        <state-number>5289</state-number>
       </table>
       <table id="12" parent="2" name="users">
-        <object-id>41219</object-id>
-        <state-number>5207</state-number>
+        <object-id>41395</object-id>
+        <state-number>5289</state-number>
       </table>
       <table id="13" parent="3" name="pg_aggregate">
         <object-id>2600</object-id>
@@ -21127,17 +21127,17 @@
         <routine-kind>FUNCTION</routine-kind>
       </routine>
       <column id="3784" parent="9" name="notes_id">
-        <state-number>5200</state-number>
+        <state-number>5282</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <column id="3785" parent="9" name="tags_id">
-        <state-number>5200</state-number>
+        <state-number>5282</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <index id="3786" parent="9" name="note_tag_pkey">
-        <object-id>41207</object-id>
+        <object-id>41383</object-id>
         <columns>notes_id
 tags_id</columns>
         <desc-columns></desc-columns>
@@ -21162,20 +21162,20 @@ tags_id</columns>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3790" parent="10" name="id">
-        <state-number>5201</state-number>
+        <state-number>5283</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <column id="3791" parent="10" name="note_text">
-        <state-number>5201</state-number>
+        <state-number>5283</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <column id="3792" parent="10" name="user_id">
-        <state-number>5201</state-number>
+        <state-number>5283</state-number>
         <data-type>integer</data-type>
       </column>
       <index id="3793" parent="10" name="notes_pkey">
-        <object-id>41212</object-id>
+        <object-id>41388</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
@@ -21192,20 +21192,20 @@ tags_id</columns>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3796" parent="11" name="id">
-        <state-number>5202</state-number>
+        <state-number>5284</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <column id="3797" parent="11" name="tag_name">
-        <state-number>5202</state-number>
+        <state-number>5284</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <column id="3798" parent="11" name="user_id">
-        <state-number>5202</state-number>
+        <state-number>5284</state-number>
         <data-type>integer</data-type>
       </column>
       <index id="3799" parent="11" name="tags_pkey">
-        <object-id>41217</object-id>
+        <object-id>41393</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
@@ -21222,20 +21222,20 @@ tags_id</columns>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3802" parent="12" name="id">
-        <state-number>5203</state-number>
+        <state-number>5285</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <column id="3803" parent="12" name="password">
-        <state-number>5203</state-number>
+        <state-number>5285</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <column id="3804" parent="12" name="user_email">
-        <state-number>5203</state-number>
+        <state-number>5285</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <index id="3805" parent="12" name="users_pkey">
-        <object-id>41225</object-id>
+        <object-id>41401</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>

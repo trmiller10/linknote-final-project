@@ -17,14 +17,14 @@ public class Tag {
 
     @Id
     @GeneratedValue
-    int id;
-    String tagName;
+    private int id;
+    private String tagName;
 
     @ManyToMany(mappedBy = "tags")
-    List<Note> notes = new ArrayList<>();
+    private List<Note> notes = new ArrayList<>();
 
     @ManyToOne
-    User user;
+    private User user;
 
 
     public Tag(){}
@@ -35,6 +35,12 @@ public class Tag {
 
     public Tag(String tagName, User user) {
         this.tagName = tagName;
+        this.user = user;
+    }
+
+    public Tag(String tagName, List<Note> notes, User user) {
+        this.tagName = tagName;
+        this.notes = notes;
         this.user = user;
     }
 
@@ -60,5 +66,13 @@ public class Tag {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public List<Note> getNotes() {
+        return notes;
+    }
+
+    public void setNotes(List<Note> notes) {
+        this.notes = notes;
     }
 }

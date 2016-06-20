@@ -13,18 +13,19 @@ public class Note {
 
     @Id
     @GeneratedValue
-    int id;
+    private int id;
 
-    String noteText;
+    private String noteText;
 
-    @ManyToMany
+    @ManyToMany/*(cascade=CascadeType.ALL)*/
     @JoinTable(name = "note_tag",
             joinColumns = @JoinColumn(name = "notes_id", referencedColumnName = "ID"),
             inverseJoinColumns = @JoinColumn(name = "tags_id", referencedColumnName = "ID"))
-    Set<Tag> tags = new HashSet<>();
+    private Set<Tag> tags = new HashSet<>();
+
 
     @ManyToOne
-    User user;
+    private User user;
 
     public Note(){}
 
@@ -33,16 +34,21 @@ public class Note {
         this.noteText = noteText;
     }
     public Note(String noteText, User user) {
-        this.id = id;
         this.noteText = noteText;
         this.user = user;
     }
 
-    /*public Note(String noteText, Set<Tag> tags) {
+    public Note(String noteText, Set<Tag> tags) {
         this.noteText = noteText;
         this.tags = tags;
     }
-*/
+
+    public Note(String noteText, Set<Tag> tags, User user) {
+        this.noteText = noteText;
+        this.tags = tags;
+        this.user = user;
+    }
+
     public Note(String noteText){
         this.noteText = noteText;
     }
@@ -71,11 +77,11 @@ public class Note {
         this.user = user;
     }
 
-    /*public Set<Tag> getTags() {
+    public Set<Tag> getTags() {
         return tags;
     }
 
     public void setTags(Set<Tag> tags) {
         this.tags = tags;
-    }*/
+    }
 }

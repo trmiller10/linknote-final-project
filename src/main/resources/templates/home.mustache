@@ -20,12 +20,10 @@
 {{^tags}}
     No tags here
 {{/tags}}
-{{#tags}}
-    {{id}}. {{tagName}}
-{{/tags}}
+
 {{#notes}}
     <li>
-    {{id}}. {{noteText}}
+    {{id}}. {{noteText}}, {{#tags}}{{tagName}}, {{id}}{{/tags}}
     </li>
 {{/notes}}
 </body>
