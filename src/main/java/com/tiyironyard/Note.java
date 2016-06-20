@@ -17,8 +17,14 @@ public class Note {
 
     String noteText;
 
-    //Set<Tag> tags = new HashSet<Tag>();
+    @ManyToMany
+    @JoinTable(name = "note_tag",
+            joinColumns = @JoinColumn(name = "notes_id", referencedColumnName = "ID"),
+            inverseJoinColumns = @JoinColumn(name = "tags_id", referencedColumnName = "ID"))
+    Set<Tag> tags = new HashSet<>();
 
+    @ManyToOne
+    User user;
 
     public Note(){}
 

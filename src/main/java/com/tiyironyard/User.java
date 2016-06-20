@@ -1,9 +1,11 @@
 package com.tiyironyard;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Taylor on 6/17/16.
@@ -17,6 +19,12 @@ public class User {
 
     String userEmail;
     String password;
+
+    @OneToMany(mappedBy = "user")
+    Set<Tag> tags = new HashSet<>();
+
+    @OneToMany(mappedBy = "user")
+    List<Note> notes = new ArrayList<>();
 
     public User(){}
 

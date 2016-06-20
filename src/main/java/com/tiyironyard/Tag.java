@@ -1,9 +1,12 @@
 package com.tiyironyard;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
+
+
+
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Taylor on 6/16/16.
@@ -15,8 +18,14 @@ public class Tag {
     @Id
     @GeneratedValue
     int id;
-
     String tagName;
+
+    @ManyToMany(mappedBy = "tags")
+    List<Note> notes = new ArrayList<>();
+
+    @ManyToOne
+    User user;
+
 
     public Tag(){}
 
