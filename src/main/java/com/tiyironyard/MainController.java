@@ -31,7 +31,7 @@ public class MainController {
 
     @RequestMapping(path="/", method = RequestMethod.GET)
     public String root(HttpSession session, Model model){
-        User user = userRepository.findFirstByUserEmail((String)session.getAttribute("userEmail"));
+        User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
 
         if(user != null){
             return "redirect:/home";
@@ -41,7 +41,7 @@ public class MainController {
 
     @RequestMapping(path="/login", method = RequestMethod.GET)
     public String login(Model model, HttpSession session){
-        User user = userRepository.findFirstByUserEmail((String)session.getAttribute("userEmail"));
+        User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
 
         if(user != null){
             return "redirect:/home";
@@ -53,27 +53,27 @@ public class MainController {
     public String loginUser (HttpSession session, String userEmail, String password) throws Exception {
         //TODO: verify the user's existence by instantiating a new user by searching for their email in userRepository
 
-        User user = userRepository.findFirstByUserEmail(userEmail);
+        User user = userRepository.findByUserEmail(userEmail);
         if(user == null) {
             user = new User(userEmail, password);
             userRepository.save(user);
-        } else if(user != null){
-
         }
+
         session.setAttribute("userEmail", userEmail);
 
         return "redirect:/home";
     }
 
-    @RequestMapping(path = "/logout", method = RequestMethod.POST)
+    @RequestMapping(path = "/logout", method = RequestMethod.GET)
     public String logout(HttpSession session){
         session.invalidate();
+
         return "redirect:/login";
     }
 
     @RequestMapping(path="/home", method = RequestMethod.GET)
     public String home(Model model, HttpSession session){
-        User user = userRepository.findFirstByUserEmail((String)session.getAttribute("userEmail"));
+        User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
 
         if(user == null){
             return "redirect:/login";
@@ -81,52 +81,135 @@ public class MainController {
 
         model.addAttribute("user", user);
 
-        Iterable<Note> notes = noteRepository.findAll();
+        List<Note> userNotes = user.getNotes();
+        Set<Tag> userTags = user.getTags();
 
-        Iterable<Tag> tags = tagRepository.findAll();
-
-        model.addAttribute("notes", notes);
-        model.addAttribute("tags", tags);
+        model.addAttribute("notes", userNotes);
+        model.addAttribute("tags", userTags);
 
         return "home";
     }
 
     @RequestMapping(path="/add-note", method = RequestMethod.POST)
-    public String addNote(HttpSession session, String inputText, String tagName){
-        User user = userRepository.findFirstByUserEmail((String)session.getAttribute("userEmail"));
+    public String addNote(HttpSession session, String inputText, String tagInput) {
+        User user = userRepository.findByUserEmail((String) session.getAttribute("userEmail"));
 
+        Set<Tag> userTagList = user.getTags();
+        List<Note> userNoteList = user.getNotes();
 
-        Tag newTag = new Tag();
-        newTag.setTagName(tagName);
-        newTag.setUser(user);
 
         Note newNote = new Note();
         newNote.setNoteText(inputText);
         newNote.setUser(user);
-
-        List<Note> userNoteList = user.getNotes();
         userNoteList.add(newNote);
-        user.setNotes(userNoteList);
-
-        Set<Tag> userTagList = user.getTags();
-        userTagList.add(newTag);
-        //user.setTags(userTagList);
-
-        List<Note> tagNoteList = newTag.getNotes();
-        tagNoteList.add(newNote);
-        //newTag.setNotes(tagNoteList);
+        //user.setNotes(userNoteList);
 
         Set<Tag> noteTagList = newNote.getTags();
-        noteTagList.add(newTag);
-        //newNote.setTags(noteTagList);
+
+        //run through string and look for commas
+        //if there are commas
+        //split string on comma delimiter
+        String[] splitTagString = tagInput.split(",");
+        //trim starting and ending whitespace from split strings
+        for (String string : splitTagString) {
+            //trim string
+            String tagName = string.trim();
+
+            // getTagByName()
+            Tag preExistingTag = tagRepository.findTagByTagName(tagName);
+            // is this null?
+            if(preExistingTag == null){
+                //create a new tag and populate it
+                Tag newTag = new Tag();
+                newTag.setTagName(tagName);
+
+                newTag.setUser(user);
+
+                if(userTagList.add(newTag)){
+                tagRepository.save(newTag);
+                }
+                noteTagList.add(newTag);
+                newTag.getNotes().add(newNote);
+            }else {
+                noteTagList.add(preExistingTag);
+                preExistingTag.getNotes().add(newNote);
+            }
+        }
 
         userRepository.save(user);
-        tagRepository.save(newTag);
         noteRepository.save(newNote);
-
 
         return "redirect:/home";
     }
+
+/*
+
+            for(Tag tag : userTagList) {
+                if (tag.equals(newTag)) {
+                    System.out.println("This tag exists already");
+                    tag.getNotes().add(newNote);
+                    newNote.getTags().add(tag);
+                    tagRepository.save(tag);
+
+                    break;
+                }
+                else{
+                    userTagList.add(newTag);
+                    noteTagList.add(newTag);
+
+                    tagRepository.save(newTag);
+
+                    List<Note> tagNoteList = newTag.getNotes();
+                    tagNoteList.add(newNote);
+            }
+
+        }*/
+
+
+
+
+
+            //look through userTagList and pull out the tag names
+            /*for (Tag tag : userTagList) {
+                String existingTagName = tag.getTagName();
+                //if the pulled name equals the input name
+                if (existingTagName.equals(trimmedTag)) {
+                    //scream and throw a tantrum
+                    System.out.println("There is already a tag with this name!");
+                    break;
+                } else {*/
+
+
+
+
+
+
+
+        //Tag newTag = new Tag();
+        //newTag.setTagName(tagInput);
+        //newTag.setUser(user);
+
+        /*Note newNote = new Note();
+        newNote.setNoteText(inputText);
+        newNote.setUser(user);*/
+
+        /*List<Note> userNoteList = user.getNotes();
+        userNoteList.add(newNote);
+        user.setNotes(userNoteList);*/
+
+        //Set<Tag> userTagList = user.getTags();
+        //userTagList.add(newTag);
+
+        //List<Note> tagNoteList = newTag.getNotes();
+        //tagNoteList.add(newNote);
+
+        //Set<Tag> noteTagList = newNote.getTags();
+        //noteTagList.add(newTag);
+
+
+
+
+
 
     @RequestMapping(path="/list", method = RequestMethod.GET)
     public String list(Model model){

@@ -1,6 +1,5 @@
 package com.tiyironyard;
 
-import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 
 /**
@@ -8,5 +7,5 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface UserRepository extends CrudRepository<User, Integer>{
 
-    User findFirstByUserEmail(String userEmail);
+    User findByUserEmail(String userEmail);
 }

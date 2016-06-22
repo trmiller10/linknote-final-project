@@ -9,11 +9,11 @@
     No user logged in.
 {{/user}}
 <form action="/add-note" method="post" id="textForm">
-    Tags: <input type="text" name="tagName">
+    Tags (separate tags with commas!): <input type="text" name="tagInput">
     <button type="submit">Add Note and Tag</button>
 </form>
 <textarea form="textForm" rows="20" cols="70" name="inputText" placeholder="Enter note here"></textarea>
-
+<p><a href="/list">Note List</a></p> <p><a href="/export">Export Notes</a></p>
 {{^notes}}
     No notes here
 {{/notes}}
@@ -23,7 +23,7 @@
 
 {{#notes}}
     <li>
-    {{id}}. {{noteText}}, {{#tags}}{{tagName}}, {{id}}{{/tags}}
+    {{id}}. {{noteText}} {{#tags}}({{id}}. {{tagName}}){{/tags}}
     </li>
 {{/notes}}
 </body>

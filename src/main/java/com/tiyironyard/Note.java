@@ -12,7 +12,7 @@ import java.util.Set;
 public class Note {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = “userIdSequence")
     private int id;
 
     private String noteText;
