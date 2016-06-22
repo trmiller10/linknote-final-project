@@ -17,15 +17,26 @@
 {{^notes}}
     No notes here
 {{/notes}}
-{{^tags}}
-    No tags here
-{{/tags}}
 
+{{#user}}
+    {{id}}. {{userEmail}}'s tags:
+    {{^tags}}
+        No tags here
+    {{/tags}}
+    {{#tags}}
+        <li>
+        {{id}}. {{tagName}}
+        </li>
+    {{/tags}}
+{{/user}}
+{{#user}}
+    {{id}}. {{userEmail}}'s notes:
 {{#notes}}
     <li>
     {{id}}. {{noteText}} {{#tags}}({{id}}. {{tagName}}){{/tags}}
     </li>
 {{/notes}}
+{{/user}}
 </body>
 
 </html>

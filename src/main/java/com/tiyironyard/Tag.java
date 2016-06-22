@@ -5,9 +5,7 @@ package com.tiyironyard;
 
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * Created by Taylor on 6/16/16.
@@ -24,11 +22,22 @@ public class Tag {
     @ManyToMany(mappedBy = "tags")
     private List<Note> notes = new ArrayList<>();
 
-    @ManyToOne
-    private User user;
+    //@ManyToOne
+    @ManyToMany
+     @JoinTable(name = "tag_user",
+            joinColumns = @JoinColumn(name = "tags_id", referencedColumnName = "ID"),
+            inverseJoinColumns = @JoinColumn(name = "users_id", referencedColumnName = "ID"))
+    private Set<User> users = new HashSet<>();
 
+    public Set<User> getUsers() {
+        return users;
+    }
 
-/*    @Override
+    public void setUsers(Set<User> users) {
+        this.users = users;
+    }
+
+    /*    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -68,15 +77,10 @@ public class Tag {
         this.tagName = tagName;
     }
 
-    public Tag(String tagName, User user) {
-        this.tagName = tagName;
-        this.user = user;
-    }
-
-    public Tag(String tagName, List<Note> notes, User user) {
+    public Tag(String tagName, List<Note> notes, Set<User> users) {
         this.tagName = tagName;
         this.notes = notes;
-        this.user = user;
+        this.users = users;
     }
 
     public int getId() {
@@ -95,13 +99,6 @@ public class Tag {
         this.tagName = tagName;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
 
     public List<Note> getNotes() {
         return notes;

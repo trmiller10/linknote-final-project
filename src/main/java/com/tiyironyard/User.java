@@ -20,7 +20,7 @@ public class User {
     private String userEmail;
     private String password;
 
-    @OneToMany(mappedBy = "user")
+    @ManyToMany(mappedBy = "users")
     private Set<Tag> tags = new HashSet<>();
 
     @OneToMany(mappedBy = "user")

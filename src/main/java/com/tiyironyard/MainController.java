@@ -123,7 +123,7 @@ public class MainController {
                 Tag newTag = new Tag();
                 newTag.setTagName(tagName);
 
-                newTag.setUser(user);
+                newTag.getUsers().add(user);
 
                 if(userTagList.add(newTag)){
                 tagRepository.save(newTag);
@@ -133,6 +133,9 @@ public class MainController {
             }else {
                 noteTagList.add(preExistingTag);
                 preExistingTag.getNotes().add(newNote);
+                userTagList.add(preExistingTag);
+                preExistingTag.getUsers().add(user);
+                tagRepository.save(preExistingTag);
             }
         }
 
