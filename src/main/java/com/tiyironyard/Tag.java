@@ -26,34 +26,8 @@ public class Tag {
     @ManyToMany
      @JoinTable(name = "tag_user",
             joinColumns = @JoinColumn(name = "tags_id", referencedColumnName = "ID"),
-            inverseJoinColumns = @JoinColumn(name = "users_id", referencedColumnName = "ID"))
+            inverseJoinColumns = @JoinColumn(name = "user_id", referencedColumnName = "ID"))
     private Set<User> users = new HashSet<>();
-
-    public Set<User> getUsers() {
-        return users;
-    }
-
-    public void setUsers(Set<User> users) {
-        this.users = users;
-    }
-
-    /*    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Tag tag = (Tag) o;
-        return getId() == tag.getId() &&
-                Objects.equals(getTagName(), tag.getTagName() *//*) &&
-                Objects.equals(getNotes(), tag.getNotes()) &&
-                Objects.equals(getUser(), tag.getUser()*//*
-                );
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getTagName(), getNotes(), getUser());
-    }*/
-
 
     @Override
     public boolean equals(Object o) {
@@ -107,4 +81,13 @@ public class Tag {
     public void setNotes(List<Note> notes) {
         this.notes = notes;
     }
+
+    public Set<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(Set<User> users) {
+        this.users = users;
+    }
+
 }

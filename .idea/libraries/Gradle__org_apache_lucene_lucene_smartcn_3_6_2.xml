@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.lucene:lucene-smartcn:3.6.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-smartcn/3.6.2/e86dfea83d8fa5062145025c1f06ca27f9a49cab/lucene-smartcn-3.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-smartcn/3.6.2/690716bfc7c2eef510afaa3b259b1e7d876d49dc/lucene-smartcn-3.6.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

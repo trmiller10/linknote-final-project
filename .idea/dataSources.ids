@@ -10,8 +10,8 @@
       <schema id="2" parent="1" name="public">
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
-        <introspection-state-number>5334</introspection-state-number>
-        <introspection-timestamp>2016-06-22.11:50:48.707</introspection-timestamp>
+        <introspection-state-number>5356</introspection-state-number>
+        <introspection-timestamp>2016-06-22.14:38:44.900</introspection-timestamp>
       </schema>
       <schema id="3" parent="1" name="pg_catalog">
         <object-id>11</object-id>
@@ -51,16 +51,16 @@
         <state-number>5288</state-number>
       </table>
       <table id="11" parent="2" name="tag_user">
-        <object-id>41426</object-id>
-        <state-number>5334</state-number>
+        <object-id>41441</object-id>
+        <state-number>5356</state-number>
       </table>
       <table id="12" parent="2" name="tags">
         <object-id>41390</object-id>
-        <state-number>5334</state-number>
+        <state-number>5356</state-number>
       </table>
       <table id="13" parent="2" name="users">
         <object-id>41395</object-id>
-        <state-number>5333</state-number>
+        <state-number>5355</state-number>
       </table>
       <table id="14" parent="3" name="pg_aggregate">
         <object-id>2600</object-id>
@@ -21194,25 +21194,25 @@ tags_id</columns>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3797" parent="11" name="tags_id">
-        <state-number>5332</state-number>
+        <state-number>5354</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
-      <column id="3798" parent="11" name="notes_id">
-        <state-number>5332</state-number>
+      <column id="3798" parent="11" name="user_id">
+        <state-number>5354</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <index id="3799" parent="11" name="tag_user_pkey">
-        <object-id>41429</object-id>
+        <object-id>41444</object-id>
         <columns>tags_id
-notes_id</columns>
+user_id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
       <key id="3800" parent="11" name="tag_user_pkey">
         <columns>tags_id
-notes_id</columns>
+user_id</columns>
         <underlying-index>tag_user_pkey</underlying-index>
         <primary>1</primary>
       </key>
@@ -21222,8 +21222,8 @@ notes_id</columns>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="3802" parent="11" name="fk_fsursv4oiq8q7n4l1q47f31t4">
-        <columns>notes_id</columns>
+      <foreign-key id="3802" parent="11" name="fk_odvn6qyd3r5tltxv3ykuaqux3">
+        <columns>user_id</columns>
         <ref-key>~.users.users_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>

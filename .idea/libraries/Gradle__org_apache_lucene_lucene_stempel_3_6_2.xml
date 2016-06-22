@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.lucene:lucene-stempel:3.6.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-stempel/3.6.2/a0b8b2e20fd04724fbbd6a67037f5a1a98feed72/lucene-stempel-3.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-stempel/3.6.2/e3ba6d6a0b5624f8aeef4f9217b3d0007ac29d3d/lucene-stempel-3.6.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

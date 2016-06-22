@@ -94,124 +94,77 @@ public class MainController {
     public String addNote(HttpSession session, String inputText, String tagInput) {
         User user = userRepository.findByUserEmail((String) session.getAttribute("userEmail"));
 
-        Set<Tag> userTagList = user.getTags();
+        //get current user's tags
+        Set<Tag> userTagSet = user.getTags();
+        //get current user's notes
         List<Note> userNoteList = user.getNotes();
 
 
+        //instantiate a new note
         Note newNote = new Note();
+        //set newNote's text property to the input text
         newNote.setNoteText(inputText);
+        //set newNote's user property to the current user
         newNote.setUser(user);
+        //add the newNote to current user's note list
         userNoteList.add(newNote);
-        //user.setNotes(userNoteList);
 
-        Set<Tag> noteTagList = newNote.getTags();
+        //get the newNote's set of tags (should be zero)
+        Set<Tag> noteTagSet = newNote.getTags();
 
-        //run through string and look for commas
-        //if there are commas
-        //split string on comma delimiter
+        //split the input tag string into a string array based on commas
         String[] splitTagString = tagInput.split(",");
-        //trim starting and ending whitespace from split strings
+
+        //for each string in the string array
         for (String string : splitTagString) {
-            //trim string
+            //trim starting and ending whitespace from split strings
             String tagName = string.trim();
 
-            // getTagByName()
+            // instantiate a new Tag object and look through tagRepository if new tag's name already exists
             Tag preExistingTag = tagRepository.findTagByTagName(tagName);
+
+
             // is this null?
-            if(preExistingTag == null){
+            if (preExistingTag == null){
+
                 //create a new tag and populate it
                 Tag newTag = new Tag();
                 newTag.setTagName(tagName);
-
                 newTag.getUsers().add(user);
 
-                if(userTagList.add(newTag)){
-                tagRepository.save(newTag);
+                //if current user can add the tag to their list (=true)
+                //basically a final check that the tag doesn't already exist
+                if (userTagSet.add(newTag)){
+                    //save the new tag in the tagRepository
+                    tagRepository.save(newTag);
                 }
-                noteTagList.add(newTag);
+                //otherwise add the new tag to the new note's tag list
+                noteTagSet.add(newTag);
+                //add the new note to the new tag's list of notes
                 newTag.getNotes().add(newNote);
-            }else {
-                noteTagList.add(preExistingTag);
+
+
+            } else { //if there already is a tag with the same name
+                //add the old tag to the new note's tag set
+                noteTagSet.add(preExistingTag);
+                //add the new note to the old tag's list of notes
                 preExistingTag.getNotes().add(newNote);
-                userTagList.add(preExistingTag);
+                //add the old tag to the current user's tag set
+                //if it already exists, it shouldn't be duplicated
+                userTagSet.add(preExistingTag);
+                //add the current user to the old tag's list of users
                 preExistingTag.getUsers().add(user);
+                //save the changes made to the old tag into the tag repository
                 tagRepository.save(preExistingTag);
             }
         }
-
+        //save the changes made to the current user and the new note into their respective repositories
         userRepository.save(user);
         noteRepository.save(newNote);
 
+        //refresh the home page
         return "redirect:/home";
     }
-
-/*
-
-            for(Tag tag : userTagList) {
-                if (tag.equals(newTag)) {
-                    System.out.println("This tag exists already");
-                    tag.getNotes().add(newNote);
-                    newNote.getTags().add(tag);
-                    tagRepository.save(tag);
-
-                    break;
-                }
-                else{
-                    userTagList.add(newTag);
-                    noteTagList.add(newTag);
-
-                    tagRepository.save(newTag);
-
-                    List<Note> tagNoteList = newTag.getNotes();
-                    tagNoteList.add(newNote);
-            }
-
-        }*/
-
-
-
-
-
-            //look through userTagList and pull out the tag names
-            /*for (Tag tag : userTagList) {
-                String existingTagName = tag.getTagName();
-                //if the pulled name equals the input name
-                if (existingTagName.equals(trimmedTag)) {
-                    //scream and throw a tantrum
-                    System.out.println("There is already a tag with this name!");
-                    break;
-                } else {*/
-
-
-
-
-
-
-
-        //Tag newTag = new Tag();
-        //newTag.setTagName(tagInput);
-        //newTag.setUser(user);
-
-        /*Note newNote = new Note();
-        newNote.setNoteText(inputText);
-        newNote.setUser(user);*/
-
-        /*List<Note> userNoteList = user.getNotes();
-        userNoteList.add(newNote);
-        user.setNotes(userNoteList);*/
-
-        //Set<Tag> userTagList = user.getTags();
-        //userTagList.add(newTag);
-
-        //List<Note> tagNoteList = newTag.getNotes();
-        //tagNoteList.add(newNote);
-
-        //Set<Tag> noteTagList = newNote.getTags();
-        //noteTagList.add(newTag);
-
-
-
-
 
 
     @RequestMapping(path="/list", method = RequestMethod.GET)
