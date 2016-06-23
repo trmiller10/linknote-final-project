@@ -1,5 +1,9 @@
 package com.tiyironyard;
 
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Indexed;
+import org.hibernate.search.annotations.IndexedEmbedded;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +22,7 @@ public class User {
     private int id;
 
     private String userEmail;
+
     private String password;
 
     @ManyToMany(mappedBy = "users")

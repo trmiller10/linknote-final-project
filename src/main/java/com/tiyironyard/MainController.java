@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;
 
@@ -18,6 +17,8 @@ import javax.servlet.http.HttpSession;
  */
 @Controller
 public class MainController {
+
+
 
     @Autowired
     NoteRepository noteRepository;
@@ -28,8 +29,11 @@ public class MainController {
     @Autowired
     UserRepository userRepository;
 
+    @Autowired
+    private TagSearch tagSearch;
 
-    @RequestMapping(path="/", method = RequestMethod.GET)
+
+    @RequestMapping(path = "/", method = RequestMethod.GET)
     public String root(HttpSession session, Model model){
         User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
 
@@ -39,7 +43,7 @@ public class MainController {
         return "login";
     }
 
-    @RequestMapping(path="/login", method = RequestMethod.GET)
+    @RequestMapping(path = "/login", method = RequestMethod.GET)
     public String login(Model model, HttpSession session){
         User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
 
@@ -71,7 +75,7 @@ public class MainController {
         return "redirect:/login";
     }
 
-    @RequestMapping(path="/home", method = RequestMethod.GET)
+    @RequestMapping(path = "/home", method = RequestMethod.GET)
     public String home(Model model, HttpSession session){
         User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
 
@@ -90,10 +94,13 @@ public class MainController {
         return "home";
     }
 
-    @RequestMapping(path="/add-note", method = RequestMethod.POST)
+    @RequestMapping(path = "/add-note", method = RequestMethod.POST)
     public String addNote(HttpSession session, String inputText, String tagInput) {
-        User user = userRepository.findByUserEmail((String) session.getAttribute("userEmail"));
+        User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
 
+        if(user == null){
+            return "redirect:/login";
+        }
         //get current user's tags
         Set<Tag> userTagSet = user.getTags();
         //get current user's notes
@@ -167,13 +174,29 @@ public class MainController {
     }
 
 
-    @RequestMapping(path="/list", method = RequestMethod.GET)
+    @RequestMapping(path = "/search-tags", method = RequestMethod.POST)
+    public String searchTags(HttpSession session, Model model, String searchInput){
+        User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
+
+        if(user == null){
+            return "redirect:/login";
+        }
+        List<Tag> tagResults = tagSearch.search(searchInput);
+
+        //for (Tag tag: tagResults) {
+            model.addAttribute("tagResults", tagResults);
+        
+        return "home";
+    }
+
+
+    @RequestMapping(path = "/list", method = RequestMethod.GET)
     public String list(Model model){
 
         return "list";
     }
 
-    @RequestMapping(path="/export", method = RequestMethod.GET)
+    @RequestMapping(path = "/export", method = RequestMethod.GET)
     public String export(Model model){
 
         return "export";

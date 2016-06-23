@@ -1,5 +1,9 @@
 package com.tiyironyard;
 
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Indexed;
+import org.hibernate.search.annotations.IndexedEmbedded;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;

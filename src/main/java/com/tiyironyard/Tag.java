@@ -4,6 +4,10 @@ package com.tiyironyard;
 
 
 
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Indexed;
+import org.hibernate.search.annotations.IndexedEmbedded;
+
 import javax.persistence.*;
 import java.util.*;
 
@@ -12,21 +16,25 @@ import java.util.*;
  */
 @Entity
 @Table(name = "tags")
+@Indexed
 public class Tag {
 
     @Id
     @GeneratedValue
     private int id;
+
+    @Field
     private String tagName;
 
     @ManyToMany(mappedBy = "tags")
+    @IndexedEmbedded
     private List<Note> notes = new ArrayList<>();
 
-    //@ManyToOne
     @ManyToMany
-     @JoinTable(name = "tag_user",
+    @JoinTable(name = "tag_user",
             joinColumns = @JoinColumn(name = "tags_id", referencedColumnName = "ID"),
             inverseJoinColumns = @JoinColumn(name = "user_id", referencedColumnName = "ID"))
+    @IndexedEmbedded
     private Set<User> users = new HashSet<>();
 
     @Override
