@@ -79,6 +79,8 @@ public class MainController {
     public String home(Model model, HttpSession session){
         User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
 
+        model.addAttribute("tagResults", session.getAttribute("tagResults"));
+
         if(user == null){
             return "redirect:/login";
         }
@@ -184,9 +186,9 @@ public class MainController {
         List<Tag> tagResults = tagSearch.search(searchInput);
 
         //for (Tag tag: tagResults) {
-            model.addAttribute("tagResults", tagResults);
-        
-        return "home";
+        session.setAttribute("tagResults", tagResults);
+
+        return "redirect:/home";
     }
 
 
