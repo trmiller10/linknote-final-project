@@ -37,7 +37,7 @@ public class TagSearch {
                 fullTextEntityManager.createFullTextQuery(query, Tag.class);
 
         @SuppressWarnings("unchecked")
-                List<Tag> tagResults = jpaQuery.getResultList();
+        List<Tag> tagResults = jpaQuery.getResultList();
 
         return tagResults;
     }

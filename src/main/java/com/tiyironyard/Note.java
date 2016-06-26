@@ -19,6 +19,7 @@ public class Note {
     @GeneratedValue //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = “userIdSequence")
     private int id;
 
+    //@Lob
     private String noteText;
 
     @ManyToMany/*(cascade=CascadeType.ALL)*/

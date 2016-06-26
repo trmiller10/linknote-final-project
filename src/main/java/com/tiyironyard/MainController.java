@@ -4,6 +4,7 @@ package com.tiyironyard;
 import java.util.List;
 import java.util.Set;
 
+import org.hibernate.LazyInitializationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -70,6 +71,10 @@ public class MainController {
 
     @RequestMapping(path = "/logout", method = RequestMethod.GET)
     public String logout(HttpSession session){
+
+        session.removeAttribute("tagResults");
+        session.removeAttribute("gotNotes");
+        session.removeAttribute("userEmail");
         session.invalidate();
 
         return "redirect:/login";
@@ -79,12 +84,27 @@ public class MainController {
     public String home(Model model, HttpSession session){
         User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
 
-        model.addAttribute("tagResults", session.getAttribute("tagResults"));
-
         if(user == null){
             return "redirect:/login";
         }
 
+        try {
+
+            model.addAttribute("tagResults", session.getAttribute("tagResults"));
+
+            if (session.getAttribute("tagResults") != null){
+                    model.addAttribute("gotNotes", session.getAttribute("gotNotes"));
+            }
+
+        } catch (LazyInitializationException ex){
+            System.out.println("No tags to return,");
+        }
+
+        /*try{
+            model.addAttribute("gotNotes", session.getAttribute("gotNotes"));
+        } catch (LazyInitializationException ex){
+            System.out.println("No notes to return");
+        }*/
         model.addAttribute("user", user);
 
         List<Note> userNotes = user.getNotes();
@@ -177,7 +197,7 @@ public class MainController {
 
 
     @RequestMapping(path = "/search-tags", method = RequestMethod.POST)
-    public String searchTags(HttpSession session, Model model, String searchInput){
+    public String searchTags(HttpSession session, String searchInput){
         User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
 
         if(user == null){
@@ -185,8 +205,22 @@ public class MainController {
         }
         List<Tag> tagResults = tagSearch.search(searchInput);
 
-        //for (Tag tag: tagResults) {
+
         session.setAttribute("tagResults", tagResults);
+
+        int size = tagResults.size();
+
+        for (int i = 0; i < size; i++) {
+            List<Note> gotNotes = tagResults.get(i).getNotes();
+
+            session.setAttribute("gotNotes", gotNotes);
+        }
+
+        /*for (Tag tagResult : tagResults) {
+            List<Note> gotNotes = tagResult.getNotes();
+
+            session.setAttribute("gotNotes", gotNotes);
+        }*/
 
         return "redirect:/home";
     }
@@ -198,9 +232,36 @@ public class MainController {
         return "list";
     }
 
+
+
     @RequestMapping(path = "/export", method = RequestMethod.GET)
     public String export(Model model){
 
         return "export";
     }
+/*
+    @RequestMapping(path = "/edit-tag", method = RequestMethod.POST)
+    public String editTag(HttpSession session, String editTag){
+        User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
+
+        if(user == null){
+            return "redirect:/login";
+        }
+
+        //when the user clicks on the edit tag button
+        //get the set of user's tags
+
+
+        //find the tag with the same name
+        //drop that tag from the user's list of tags
+        //add the 'new' tag to user's tag set
+        //add the 'new' tag to user's note's tag set.
+
+
+
+        Set<Tag> userTagSet = user.getTags();
+
+
+        return "redirect:/home";
+    }*/
 }

@@ -26,7 +26,7 @@ public class Tag {
     @Field
     private String tagName;
 
-    @ManyToMany(mappedBy = "tags")
+    @ManyToMany(/*fetch = FetchType.EAGER, */mappedBy = "tags")
     @IndexedEmbedded
     private List<Note> notes = new ArrayList<>();
 
