@@ -72,8 +72,6 @@ public class MainController {
     @RequestMapping(path = "/logout", method = RequestMethod.GET)
     public String logout(HttpSession session){
 
-        session.removeAttribute("tagResults");
-        session.removeAttribute("gotNotes");
         session.removeAttribute("userEmail");
         session.invalidate();
 
@@ -81,24 +79,38 @@ public class MainController {
     }
 
     @RequestMapping(path = "/home", method = RequestMethod.GET)
-    public String home(Model model, HttpSession session){
+    public String home(Model model, HttpSession session, String searchInput){
         User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
 
         if(user == null){
             return "redirect:/login";
         }
 
-        try {
+        if(searchInput != null){
+            List<Tag> tagResults = tagSearch.search(searchInput);
+
+
+            model.addAttribute("tagResults", tagResults);
+            /*int size = tagResults.size();
+
+            for (int i = 0; i < size; i++) {
+                List<Note> gotNotes = tagResults.get(i).getNotes();
+
+                session.setAttribute("gotNotes", gotNotes);
+            }*/
+        }
+
+       /* try {
 
             model.addAttribute("tagResults", session.getAttribute("tagResults"));
 
             if (session.getAttribute("tagResults") != null){
                     model.addAttribute("gotNotes", session.getAttribute("gotNotes"));
             }
-
         } catch (LazyInitializationException ex){
             System.out.println("No tags to return,");
-        }
+
+        }*/
 
         /*try{
             model.addAttribute("gotNotes", session.getAttribute("gotNotes"));
@@ -239,6 +251,9 @@ public class MainController {
 
         return "export";
     }
+
+
+
 /*
     @RequestMapping(path = "/edit-tag", method = RequestMethod.POST)
     public String editTag(HttpSession session, String editTag){

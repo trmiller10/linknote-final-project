@@ -17,15 +17,16 @@
 </form>
 <textarea form="textForm" rows="20" cols="70" name="inputText" placeholder="Enter note here"></textarea>
 
-<form action="/search-tags" method="post" id="searchForm">
+<form action="/home" method="get" id="searchForm">
     Search for tags (separate tags with commas!): <input type="text" name="searchInput">
     <button type="submit">Search Tags</button>
 </form>
+
 {{^tagResults}}
     No tags returned.
 {{/tagResults}}
 {{#tagResults}}
-    {{tagName}}. Notes: {{#gotNotes}}{{noteText}}{{/gotNotes}}
+    {{tagName}}. Notes: {{#getNotes}}<p>{{noteText}}</p>{{/getNotes}}
 {{/tagResults}}
 
 <p><a href="/list">Note List</a></p> <p><a href="/export">Export Notes</a></p>

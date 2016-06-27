@@ -1,5 +1,6 @@
 package com.tiyironyard;
 
+import org.hibernate.annotations.Type;
 import org.hibernate.search.annotations.Field;
 import org.hibernate.search.annotations.Indexed;
 import org.hibernate.search.annotations.IndexedEmbedded;
@@ -19,7 +20,8 @@ public class Note {
     @GeneratedValue //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = “userIdSequence")
     private int id;
 
-    //@Lob
+    @Lob
+    @Type(type = "text")
     private String noteText;
 
     @ManyToMany/*(cascade=CascadeType.ALL)*/
@@ -31,6 +33,8 @@ public class Note {
 
     @ManyToOne
     private User user;
+
+    //boolean checked = false;
 
     public Note(){}
 
