@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+{{#user}}
+    Welcome {{userEmail}}, {{id}}
+    <p><a href="/logout">Logout</a></p>
+{{/user}}
+
+{{^user}}
+    No user logged in.
+{{/user}}
+
+<form action="/add-note" method="post" id="textForm">
+    Tags (separate tags with commas!): <input type="text" name="tagInput">
+    <button type="submit">Add Note and Tag</button>
+    <textarea form="textForm" rows="20" cols="70" name="inputText" placeholder="Enter note here"></textarea>
+
+</form>
+
+<form action="/home" method="get" id="searchForm">
+    Search for tags (separate tags with commas!): <input type="text" name="searchInput">
+    <button type="submit">Search Tags</button>
+</form>
+
+{{^tagResults}}
+    No tags returned.
+{{/tagResults}}
+{{#tagResults}}
+    {{tagName}}. Notes: {{#getNotes}}<p>{{noteText}}</p>{{/getNotes}}
+{{/tagResults}}
+
+<p><a href="/list">Note List</a></p> <p><a href="/export">Export Notes</a></p>
+
+{{^notes}}
+    No notes here
+{{/notes}}
+
+{{#user}}
+    {{id}}. {{userEmail}}'s tags:
+
+    {{^tags}}
+        No tags here
+    {{/tags}}
+
+    {{#tags}}
+        <li>
+        {{id}}. {{tagName}}
+        </li>
+    {{/tags}}
+
+{{/user}}
+
+{{#user}}
+    {{id}}. {{userEmail}}'s notes:
+
+    {{#notes}}
+        <li>
+            {{id}}. {{noteText}} {{#tags}}({{id}}. {{tagName}}){{/tags}}
+        </li>
+    {{/notes}}
+
+{{/user}}
+
+</body>
+
+</html>

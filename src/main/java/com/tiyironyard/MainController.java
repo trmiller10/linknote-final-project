@@ -91,32 +91,8 @@ public class MainController {
 
 
             model.addAttribute("tagResults", tagResults);
-            /*int size = tagResults.size();
-
-            for (int i = 0; i < size; i++) {
-                List<Note> gotNotes = tagResults.get(i).getNotes();
-
-                session.setAttribute("gotNotes", gotNotes);
-            }*/
         }
 
-       /* try {
-
-            model.addAttribute("tagResults", session.getAttribute("tagResults"));
-
-            if (session.getAttribute("tagResults") != null){
-                    model.addAttribute("gotNotes", session.getAttribute("gotNotes"));
-            }
-        } catch (LazyInitializationException ex){
-            System.out.println("No tags to return,");
-
-        }*/
-
-        /*try{
-            model.addAttribute("gotNotes", session.getAttribute("gotNotes"));
-        } catch (LazyInitializationException ex){
-            System.out.println("No notes to return");
-        }*/
         model.addAttribute("user", user);
 
         List<Note> userNotes = user.getNotes();
@@ -206,37 +182,6 @@ public class MainController {
         //refresh the home page
         return "redirect:/home";
     }
-
-
-    @RequestMapping(path = "/search-tags", method = RequestMethod.POST)
-    public String searchTags(HttpSession session, String searchInput){
-        User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
-
-        if(user == null){
-            return "redirect:/login";
-        }
-        List<Tag> tagResults = tagSearch.search(searchInput);
-
-
-        session.setAttribute("tagResults", tagResults);
-
-        int size = tagResults.size();
-
-        for (int i = 0; i < size; i++) {
-            List<Note> gotNotes = tagResults.get(i).getNotes();
-
-            session.setAttribute("gotNotes", gotNotes);
-        }
-
-        /*for (Tag tagResult : tagResults) {
-            List<Note> gotNotes = tagResult.getNotes();
-
-            session.setAttribute("gotNotes", gotNotes);
-        }*/
-
-        return "redirect:/home";
-    }
-
 
     @RequestMapping(path = "/list", method = RequestMethod.GET)
     public String list(Model model){

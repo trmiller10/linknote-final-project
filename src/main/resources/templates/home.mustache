@@ -1,66 +1,118 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>LINKNOTE</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/linknote.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+</head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="five columns">
+            <div class="row tagSearch">
+                <h1>Your Notes</h1>
+                <form>
+                    <input class="eight columns" type="text" placeholder="Search via tags...">
+                    <input class="four columns button-primary" value="Search" type="button">
+                </form>
+            </div>
+            <form>
+                <div class="notesList">
+                    <div class="row">
+                        <input name="noteId" class="one column" type="checkbox">
+                        <div class="eleven columns">
+                            <div class="noteSummary">
+                                <a href="">That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    Rug
+                                </li>
+                                <li>
+                                    Room
+                                </li>
+                                <li>
+                                    MacGuffin
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input class="one column" type="checkbox">
+                        <div class="eleven columns">
+                            <div class="noteSummary">
+                                <a href="">That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    Rug
+                                </li>
+                                <li>
+                                    Room
+                                </li>
+                                <li>
+                                    MacGuffin
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input class="one column" type="checkbox">
+                        <div class="eleven columns">
+                            <div class="noteSummary">
+                                <a href="">That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together. That rug really tied the room together.</a>
+                            </div>
+                            <ul>
+                                <li>
+                                    Rug
+                                </li>
+                                <li>
+                                    Room
+                                </li>
+                                <li>
+                                    MacGuffin
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-{{#user}}
-    Welcome {{userEmail}}, {{id}}
-    <p><a href="/logout">Logout</a></p>
-{{/user}}
-
-{{^user}}
-    No user logged in.
-{{/user}}
-
-<form action="/add-note" method="post" id="textForm">
+                <div class="row bulkAddTags">
+                    <input type="text" class="seven columns">
+                    <input class="five columns button-primary" value="Tag Checked" type="submit">
+                </div>
+                <div class="row noteActions">
+                    <button class="four columns">Merge</button>
+                    <button class="four columns">Export</button>
+                    <button class="four columns">Delete</button>
+                </div>
+            </form>
+        </div>
+        <div class="seven columns">
+            <form action="/add-note" method="post" id="textForm">
+                <!--<form action="/add-note" method="post" id="textForm">
     Tags (separate tags with commas!): <input type="text" name="tagInput">
-    <button type="submit">Add Note and Tag</button>
-</form>
-<textarea form="textForm" rows="20" cols="70" name="inputText" placeholder="Enter note here"></textarea>
+     <button type="submit">Add Note and Tag</button>
+    <textarea form="textForm" rows="20" cols="70" name="inputText" placeholder="Enter note here"></textarea>
 
-<form action="/home" method="get" id="searchForm">
-    Search for tags (separate tags with commas!): <input type="text" name="searchInput">
-    <button type="submit">Search Tags</button>
-</form>
-
-{{^tagResults}}
-    No tags returned.
-{{/tagResults}}
-{{#tagResults}}
-    {{tagName}}. Notes: {{#getNotes}}<p>{{noteText}}</p>{{/getNotes}}
-{{/tagResults}}
-
-<p><a href="/list">Note List</a></p> <p><a href="/export">Export Notes</a></p>
-
-{{^notes}}
-    No notes here
-{{/notes}}
-
-{{#user}}
-    {{id}}. {{userEmail}}'s tags:
-
-    {{^tags}}
-        No tags here
-    {{/tags}}
-
-    {{#tags}}
-        <li>
-        {{id}}. {{tagName}}
-        </li>
-    {{/tags}}
-
-{{/user}}
-
-{{#user}}
-    {{id}}. {{userEmail}}'s notes:
-
-    {{#notes}}
-        <li>
-            {{id}}. {{noteText}} {{#tags}}({{id}}. {{tagName}}){{/tags}}
-        </li>
-    {{/notes}}
-
-{{/user}}
-
+</form>-->
+                <div>
+                    <label class="five columns">Tags (separate by commas!)</label>
+                    <input class="seven columns" type="text" name="tagInput" placeholder="">
+                </div>
+                <div class="row">
+                    <textarea class="twelve columns" placeholder="Enter note here"></textarea>
+                </div>
+                <div class="row">
+                    <input class="twelve columns button-primary" value="Add Note and Tags" type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
-
 </html>
