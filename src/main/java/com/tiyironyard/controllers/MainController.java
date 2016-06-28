@@ -72,17 +72,28 @@ public class MainController {
 
     @RequestMapping(path = "/login", method = RequestMethod.POST)
     public String loginUser(HttpSession session, String userEmail, String password) throws Exception {
-        //TODO: verify the user's existence by instantiating a new user by searching for their email in userRepository
 
-        User user = userRepository.findByUserEmail(userEmail);
+        User user = userRepository.findByUserEmailAndPassword(userEmail, password);
         if (user == null) {
             user = new User(userEmail, password);
             userRepository.save(user);
         }
-
         session.setAttribute("userEmail", userEmail);
 
         return "redirect:/home";
+
+        /*if (user == null) {
+            user = new User(userEmail, password);
+            userRepository.save(user);
+            session.setAttribute("userEmail", userEmail);
+
+            return "redirect:/home";
+
+        } else if (!user.getUserEmail().equals(userEmail) || !user.getPassword().equals(password)){
+            return "redirect:/login";
+        }
+        return "redirect:/login";
+    }*/
     }
 
     @RequestMapping(path = "/logout", method = RequestMethod.GET)
@@ -95,14 +106,19 @@ public class MainController {
     }
 
     @RequestMapping(path = "/home", method = RequestMethod.GET)
-    public String home(Model model, HttpSession session, String searchInput, Integer id, String resetSearch) {
+    public String home(Model model,
+                       HttpSession session,
+                       String searchInput,
+                       Integer id,
+                       String resetSearch/*,
+                       List<Integer> noteId*/) {
         User user = userRepository.findByUserEmail((String) session.getAttribute("userEmail"));
 
         if (user == null) {
             return "redirect:/login";
         }
 
-        if (id != null && id != 0) {
+        if (id != null && id != 0 /*&& noteId == null*/) {
             model.addAttribute("note", noteRepository.findByIdAndUserId(id, user.getId()));
         } else {
             model.addAttribute("note", new Note());
@@ -129,6 +145,21 @@ public class MainController {
         } else {
             userNotes = user.getNotes();
         }
+
+        /*if (!noteId.contains(null) && id == null){
+            List<String> joinNoteText = new ArrayList<>();
+            for (Integer foundId : noteId) {
+                //get the note associated with the current id and user
+                Note checkedNote = noteRepository.findByIdAndUserId(foundId, user.getId());
+                //pull out that note's text
+                String text = checkedNote.getNoteText();
+
+                joinNoteText.add(text);
+            }
+
+            String superNoteText = joinNoteText.stream().collect(Collectors.joining());
+            model.addAttribute("note", superNoteText);
+        }*/
 
         model.addAttribute("user", user);
 
@@ -260,7 +291,7 @@ public class MainController {
     }
 
 
-    @RequestMapping(path = "/merge-notes", method = RequestMethod.POST)
+   /* @RequestMapping(path = "/merge-notes", method = RequestMethod.POST)
     public String mergeNotes(HttpSession session,
                              @RequestParam List<Integer> noteId,
                              @RequestParam List<String> selectTag){
@@ -280,8 +311,9 @@ public class MainController {
 
         String superNoteText = joinNoteText.stream().collect(Collectors.joining());
 
+        tagAndNoteService.saveNoteAndTags(user, superNoteText, selectTag);
         return "redirect:/home";
-    }
+    }*/
 
     @RequestMapping(path = "/delete-notes", method = RequestMethod.POST)
     public String deleteNotes(HttpSession session, @RequestParam List<Integer> noteId){

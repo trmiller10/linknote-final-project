@@ -20,6 +20,10 @@ jar {
 }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+//gives heroku compiler information
+task stage{
+	dependsOn build
+}
 
 repositories {
 	mavenCentral()
@@ -33,6 +37,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile(group: 'org.hibernate', name: 'hibernate-search-orm', version: '4.5.1.Final')
 	compile(group: 'org.hibernate', name: 'hibernate-entitymanager')
+	/*compile('org.springframework.security:spring-security-web:3.2.3.RELEASE')
+	compile('org.springframework.security:spring-security-config:3.2.3.RELEASE')*/
 	runtime('com.h2database:h2')
 	runtime('org.postgresql:postgresql')
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
