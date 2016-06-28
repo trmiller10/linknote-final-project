@@ -1,5 +1,6 @@
 package com.tiyironyard;
 
+import org.apache.commons.lang.StringUtils;
 import org.hibernate.annotations.Type;
 import org.hibernate.search.annotations.Field;
 import org.hibernate.search.annotations.Indexed;
@@ -22,7 +23,7 @@ public class Note {
 
     @Lob
     @Type(type = "text")
-    private String noteText;
+    private String noteText = "";
 
     @ManyToMany/*(cascade=CascadeType.ALL)*/
     @JoinTable(name = "note_tag",
@@ -58,6 +59,19 @@ public class Note {
         this.user = user;
     }
 
+    public String toString(){
+        return getNoteText();
+    }
+
+    public String getTagList(){
+        Set<String> tagList = new HashSet<>();
+        for (Tag tag : tags) {
+            String nameString = tag.getTagName();
+            tagList.add(nameString);
+        }
+
+        return StringUtils.join(tagList, ", ");
+    }
     public Note(String noteText){
         this.noteText = noteText;
     }

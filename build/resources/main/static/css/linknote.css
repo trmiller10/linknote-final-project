@@ -13,6 +13,9 @@ textarea{
     margin-bottom: 1em;
     border: 1px solid lightgray;
 }
+#logoutLink{
+    margin-top: 2em;
+}
 ul li{
     display: inline;
 }

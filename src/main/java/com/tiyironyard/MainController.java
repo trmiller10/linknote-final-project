@@ -1,10 +1,11 @@
 package com.tiyironyard;
 
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import org.hibernate.LazyInitializationException;
+import org.hibernate.search.errors.EmptyQueryException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,7 +21,6 @@ import javax.servlet.http.HttpSession;
 public class MainController {
 
 
-
     @Autowired
     NoteRepository noteRepository;
 
@@ -33,33 +33,36 @@ public class MainController {
     @Autowired
     private TagSearch tagSearch;
 
+    @Autowired
+    private StopWordSearch stopWordSearch;
+
 
     @RequestMapping(path = "/", method = RequestMethod.GET)
-    public String root(HttpSession session, Model model){
-        User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
+    public String root(HttpSession session, Model model) {
+        User user = userRepository.findByUserEmail((String) session.getAttribute("userEmail"));
 
-        if(user != null){
+        if (user != null) {
             return "redirect:/home";
         }
         return "login";
     }
 
     @RequestMapping(path = "/login", method = RequestMethod.GET)
-    public String login(Model model, HttpSession session){
-        User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
+    public String login(Model model, HttpSession session) {
+        User user = userRepository.findByUserEmail((String) session.getAttribute("userEmail"));
 
-        if(user != null){
+        if (user != null) {
             return "redirect:/home";
         }
         return "login";
     }
 
     @RequestMapping(path = "/login", method = RequestMethod.POST)
-    public String loginUser (HttpSession session, String userEmail, String password) throws Exception {
+    public String loginUser(HttpSession session, String userEmail, String password) throws Exception {
         //TODO: verify the user's existence by instantiating a new user by searching for their email in userRepository
 
         User user = userRepository.findByUserEmail(userEmail);
-        if(user == null) {
+        if (user == null) {
             user = new User(userEmail, password);
             userRepository.save(user);
         }
@@ -70,7 +73,7 @@ public class MainController {
     }
 
     @RequestMapping(path = "/logout", method = RequestMethod.GET)
-    public String logout(HttpSession session){
+    public String logout(HttpSession session) {
 
         session.removeAttribute("userEmail");
         session.invalidate();
@@ -79,23 +82,43 @@ public class MainController {
     }
 
     @RequestMapping(path = "/home", method = RequestMethod.GET)
-    public String home(Model model, HttpSession session, String searchInput){
-        User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
+    public String home(Model model, HttpSession session, String searchInput, Integer id, String resetSearch) {
+        User user = userRepository.findByUserEmail((String) session.getAttribute("userEmail"));
 
-        if(user == null){
+        if (user == null) {
             return "redirect:/login";
         }
 
-        if(searchInput != null){
-            List<Tag> tagResults = tagSearch.search(searchInput);
-
-
-            model.addAttribute("tagResults", tagResults);
+        if (id != null && id != 0) {
+            model.addAttribute("note", user.getNotes().get(id));
+        } else {
+            model.addAttribute("note", new Note());
         }
+
+        List<Note> userNotes = new ArrayList<>();
+
+        if (resetSearch != null) {
+            searchInput = null;
+            userNotes = user.getNotes();
+        }
+
+        if (searchInput != null) {
+            try {
+                List<Tag> tagResults = tagSearch.search(searchInput);
+            } catch (EmptyQueryException e) {
+                List<Tag> tagResults = stopWordSearch.search(searchInput);
+            }
+            for (Tag tag : tagResults) {
+                List<Note> gotNotes = tag.getNotes();
+                userNotes.addAll(gotNotes);
+            }
+        } else {
+            userNotes = user.getNotes();
+        }
+
 
         model.addAttribute("user", user);
 
-        List<Note> userNotes = user.getNotes();
         Set<Tag> userTags = user.getTags();
 
         model.addAttribute("notes", userNotes);
@@ -105,10 +128,10 @@ public class MainController {
     }
 
     @RequestMapping(path = "/add-note", method = RequestMethod.POST)
-    public String addNote(HttpSession session, String inputText, String tagInput) {
-        User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
+    public String addNote(HttpSession session, String inputText, String tagInput, Integer id) {
+        User user = userRepository.findByUserEmail((String) session.getAttribute("userEmail"));
 
-        if(user == null){
+        if (user == null) {
             return "redirect:/login";
         }
         //get current user's tags
@@ -116,9 +139,15 @@ public class MainController {
         //get current user's notes
         List<Note> userNoteList = user.getNotes();
 
-
         //instantiate a new note
         Note newNote = new Note();
+
+
+        if (id != null) {
+            newNote = noteRepository.findOne(id);
+            newNote.getTags().clear();
+        }
+
         //set newNote's text property to the input text
         newNote.setNoteText(inputText);
         //set newNote's user property to the current user
@@ -142,7 +171,7 @@ public class MainController {
 
 
             // is this null?
-            if (preExistingTag == null){
+            if (preExistingTag == null) {
 
                 //create a new tag and populate it
                 Tag newTag = new Tag();
@@ -151,7 +180,7 @@ public class MainController {
 
                 //if current user can add the tag to their list (=true)
                 //basically a final check that the tag doesn't already exist
-                if (userTagSet.add(newTag)){
+                if (userTagSet.add(newTag)) {
                     //save the new tag in the tagRepository
                     tagRepository.save(newTag);
                 }
@@ -183,45 +212,17 @@ public class MainController {
         return "redirect:/home";
     }
 
+
     @RequestMapping(path = "/list", method = RequestMethod.GET)
-    public String list(Model model){
+    public String list(Model model) {
 
         return "list";
     }
 
 
-
     @RequestMapping(path = "/export", method = RequestMethod.GET)
-    public String export(Model model){
+    public String export(Model model) {
 
         return "export";
     }
-
-
-
-/*
-    @RequestMapping(path = "/edit-tag", method = RequestMethod.POST)
-    public String editTag(HttpSession session, String editTag){
-        User user = userRepository.findByUserEmail((String)session.getAttribute("userEmail"));
-
-        if(user == null){
-            return "redirect:/login";
-        }
-
-        //when the user clicks on the edit tag button
-        //get the set of user's tags
-
-
-        //find the tag with the same name
-        //drop that tag from the user's list of tags
-        //add the 'new' tag to user's tag set
-        //add the 'new' tag to user's note's tag set.
-
-
-
-        Set<Tag> userTagSet = user.getTags();
-
-
-        return "redirect:/home";
-    }*/
 }

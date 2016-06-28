@@ -10,8 +10,8 @@
       <schema id="2" parent="1" name="public">
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
-        <introspection-state-number>5541</introspection-state-number>
-        <introspection-timestamp>2016-06-26.15:13:18.563</introspection-timestamp>
+        <introspection-state-number>5586</introspection-state-number>
+        <introspection-timestamp>2016-06-27.18:02:24.600</introspection-timestamp>
       </schema>
       <schema id="3" parent="1" name="pg_catalog">
         <object-id>11</object-id>
@@ -27,8 +27,8 @@
       <schema id="5" parent="1" name="pg_toast">
         <object-id>99</object-id>
         <comment>reserved schema for TOAST tables</comment>
-        <introspection-state-number>5535</introspection-state-number>
-        <introspection-timestamp>2016-06-26.15:13:19.032</introspection-timestamp>
+        <introspection-state-number>5580</introspection-state-number>
+        <introspection-timestamp>2016-06-27.18:02:25.148</introspection-timestamp>
       </schema>
       <schema id="6" parent="1" name="pg_toast_temp_1">
         <object-id>11817</object-id>
@@ -39,28 +39,28 @@
         <introspection-timestamp>2016-06-17.11:50:45.055</introspection-timestamp>
       </schema>
       <sequence id="8" parent="2" name="hibernate_sequence">
-        <object-id>49406</object-id>
-        <state-number>5541</state-number>
+        <object-id>49465</object-id>
+        <state-number>5586</state-number>
       </sequence>
       <table id="9" parent="2" name="note_tag">
-        <object-id>49350</object-id>
-        <state-number>5537</state-number>
+        <object-id>49409</object-id>
+        <state-number>5582</state-number>
       </table>
       <table id="10" parent="2" name="notes">
-        <object-id>49355</object-id>
-        <state-number>5538</state-number>
+        <object-id>49414</object-id>
+        <state-number>5583</state-number>
       </table>
       <table id="11" parent="2" name="tag_user">
-        <object-id>49363</object-id>
-        <state-number>5540</state-number>
+        <object-id>49422</object-id>
+        <state-number>5585</state-number>
       </table>
       <table id="12" parent="2" name="tags">
-        <object-id>49368</object-id>
-        <state-number>5540</state-number>
+        <object-id>49427</object-id>
+        <state-number>5585</state-number>
       </table>
       <table id="13" parent="2" name="users">
-        <object-id>49373</object-id>
-        <state-number>5539</state-number>
+        <object-id>49432</object-id>
+        <state-number>5584</state-number>
       </table>
       <table id="14" parent="3" name="pg_aggregate">
         <object-id>2600</object-id>
@@ -21131,17 +21131,17 @@
         <routine-kind>FUNCTION</routine-kind>
       </routine>
       <column id="3785" parent="9" name="notes_id">
-        <state-number>5531</state-number>
+        <state-number>5576</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <column id="3786" parent="9" name="tags_id">
-        <state-number>5531</state-number>
+        <state-number>5576</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <index id="3787" parent="9" name="note_tag_pkey">
-        <object-id>49353</object-id>
+        <object-id>49412</object-id>
         <columns>notes_id
 tags_id</columns>
         <desc-columns></desc-columns>
@@ -21166,20 +21166,20 @@ tags_id</columns>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3791" parent="10" name="id">
-        <state-number>5532</state-number>
+        <state-number>5577</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <column id="3792" parent="10" name="note_text">
-        <state-number>5532</state-number>
+        <state-number>5577</state-number>
         <data-type>text</data-type>
       </column>
       <column id="3793" parent="10" name="user_id">
-        <state-number>5532</state-number>
+        <state-number>5577</state-number>
         <data-type>integer</data-type>
       </column>
       <index id="3794" parent="10" name="notes_pkey">
-        <object-id>49361</object-id>
+        <object-id>49420</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
@@ -21196,17 +21196,17 @@ tags_id</columns>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3797" parent="11" name="tags_id">
-        <state-number>5533</state-number>
+        <state-number>5578</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <column id="3798" parent="11" name="user_id">
-        <state-number>5533</state-number>
+        <state-number>5578</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <index id="3799" parent="11" name="tag_user_pkey">
-        <object-id>49366</object-id>
+        <object-id>49425</object-id>
         <columns>tags_id
 user_id</columns>
         <desc-columns></desc-columns>
@@ -21231,16 +21231,16 @@ user_id</columns>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3803" parent="12" name="id">
-        <state-number>5534</state-number>
+        <state-number>5579</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <column id="3804" parent="12" name="tag_name">
-        <state-number>5534</state-number>
+        <state-number>5579</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <index id="3805" parent="12" name="tags_pkey">
-        <object-id>49371</object-id>
+        <object-id>49430</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
@@ -21251,20 +21251,20 @@ user_id</columns>
         <primary>1</primary>
       </key>
       <column id="3807" parent="13" name="id">
-        <state-number>5535</state-number>
+        <state-number>5580</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
       <column id="3808" parent="13" name="password">
-        <state-number>5535</state-number>
+        <state-number>5580</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <column id="3809" parent="13" name="user_email">
-        <state-number>5535</state-number>
+        <state-number>5580</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <index id="3810" parent="13" name="users_pkey">
-        <object-id>49379</object-id>
+        <object-id>49438</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
