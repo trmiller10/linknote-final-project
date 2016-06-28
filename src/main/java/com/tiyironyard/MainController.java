@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
 
@@ -33,8 +34,8 @@ public class MainController {
     @Autowired
     private TagSearch tagSearch;
 
-    @Autowired
-    private StopWordSearch stopWordSearch;
+    //@Autowired
+    //private StopWordSearch stopWordSearch;
 
 
     @RequestMapping(path = "/", method = RequestMethod.GET)
@@ -103,11 +104,11 @@ public class MainController {
         }
 
         if (searchInput != null) {
-            try {
+            //try {
                 List<Tag> tagResults = tagSearch.search(searchInput);
-            } catch (EmptyQueryException e) {
-                List<Tag> tagResults = stopWordSearch.search(searchInput);
-            }
+            //} catch (EmptyQueryException e) {
+            //    List<Tag> tagResults = stopWordSearch.search(searchInput);
+            //}
             for (Tag tag : tagResults) {
                 List<Note> gotNotes = tag.getNotes();
                 userNotes.addAll(gotNotes);
@@ -143,7 +144,7 @@ public class MainController {
         Note newNote = new Note();
 
 
-        if (id != null) {
+        if (id != null && id != 0) {
             newNote = noteRepository.findOne(id);
             newNote.getTags().clear();
         }
@@ -209,6 +210,13 @@ public class MainController {
         noteRepository.save(newNote);
 
         //refresh the home page
+        return "redirect:/home";
+    }
+
+    @RequestMapping(path = "/bulk-tag", method = RequestMethod.POST)
+    public String bulkTag(@RequestParam List<Integer> noteId, @RequestParam List<String> selectTag){
+        int x = 1;
+
         return "redirect:/home";
     }
 

@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <script src="javascript/scripts.js"></script>
 </head>
 <body>
 <div class="container">
@@ -24,13 +25,13 @@
                     <button class="twelve columns button-primary" name="resetSearch" type="submit">All Notes</button>
                 </form>
             </div>
-            <form>
+            <form action="/button" method="post" id="noteListActions">
                 <div class="notesList">
                     {{^notes}}No notes to display.{{/notes}}
                     {{#notes}}
                     <div class="row">
                         <div class="one column">
-                            <input name="noteId" type="checkbox">
+                            <input type="checkbox" name="noteId" value="{{id}}">
                         </div>
                         <div class="eleven columns">
                             <div class="noteSummary">
@@ -48,13 +49,13 @@
                 </div>
 
                 <div class="row bulkAddTags">
-                    <input type="text" class="seven columns">
-                    <input class="five columns button-primary" value="Tag Checked" type="submit">
+                    <input type="text" class="seven columns" name="selectTag">
+                    <input class="five columns button-primary" value="Tag Checked" type="submit" onclick="setAction('/bulk-tag')">
                 </div>
                 <div class="row noteActions">
-                    <button class="four columns">Merge</button>
-                    <button class="four columns">Export</button>
-                    <button class="four columns">Delete</button>
+                    <button class="four columns" onclick="setAction('/merge-notes')">Merge</button>
+                    <button class="four columns" onclick="setAction('/export-notes')">Export</button>
+                    <button class="four columns" onclick="setAction('/delete-checked')">Delete</button>
                 </div>
             </form>
         </div>
