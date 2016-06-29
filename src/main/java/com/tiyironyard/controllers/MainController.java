@@ -110,15 +110,15 @@ public class MainController {
                        HttpSession session,
                        String searchInput,
                        Integer id,
-                       String resetSearch/*,
-                       List<Integer> noteId*/) {
+                       String resetSearch,
+                       String[] noteId) {
         User user = userRepository.findByUserEmail((String) session.getAttribute("userEmail"));
 
         if (user == null) {
             return "redirect:/login";
         }
 
-        if (id != null && id != 0 /*&& noteId == null*/) {
+        if (id != null && id != 0 && noteId == null) {
             model.addAttribute("note", noteRepository.findByIdAndUserId(id, user.getId()));
         } else {
             model.addAttribute("note", new Note());
@@ -145,20 +145,24 @@ public class MainController {
         } else {
             userNotes = user.getNotes();
         }
-
-        /*if (!noteId.contains(null) && id == null){
+       /* try{
+        if (noteId != null && searchInput == null && id == null) {
             List<String> joinNoteText = new ArrayList<>();
-            for (Integer foundId : noteId) {
+            for (String foundId : noteId) {
                 //get the note associated with the current id and user
-                Note checkedNote = noteRepository.findByIdAndUserId(foundId, user.getId());
+                Note checkedNote = noteRepository.findByIdAndUserId(Integer.valueOf(foundId), user.getId());
                 //pull out that note's text
                 String text = checkedNote.getNoteText();
 
                 joinNoteText.add(text);
             }
 
+
             String superNoteText = joinNoteText.stream().collect(Collectors.joining());
             model.addAttribute("note", superNoteText);
+        }
+        }catch (NullPointerException e){
+            e.printStackTrace();
         }*/
 
         model.addAttribute("user", user);
@@ -290,9 +294,9 @@ public class MainController {
         return "redirect:/home";
     }
 
-
-   /* @RequestMapping(path = "/merge-notes", method = RequestMethod.POST)
+    @RequestMapping(path = "/merge-notes", method = RequestMethod.POST)
     public String mergeNotes(HttpSession session,
+                             Integer id,
                              @RequestParam List<Integer> noteId,
                              @RequestParam List<String> selectTag){
         User user = userRepository.findByUserEmail((String) session.getAttribute("userEmail"));
@@ -300,20 +304,26 @@ public class MainController {
             return "redirect:/login";
         }
         List<String> joinNoteText = new ArrayList<>();
-        for (Integer id : noteId) {
+        for (Integer foundId : noteId) {
             //get the note associated with the current id and user
-            Note checkedNote = noteRepository.findByIdAndUserId(id, user.getId());
+            Note checkedNote = noteRepository.findByIdAndUserId(foundId, user.getId());
             //pull out that note's text
             String text = checkedNote.getNoteText();
+
+            Set<Tag> noteTags = checkedNote.getTags();
 
             joinNoteText.add(text);
         }
 
-        String superNoteText = joinNoteText.stream().collect(Collectors.joining());
+        String superNoteText = joinNoteText.stream().collect(Collectors.joining("\n"));
 
-        tagAndNoteService.saveNoteAndTags(user, superNoteText, selectTag);
+        //for each tagName in that note's tag set
+        for (String tagName : selectTag) {
+            tagAndNoteService.saveNoteAndTags(user, superNoteText, tagName, id);
+        }
+
         return "redirect:/home";
-    }*/
+    }
 
     @RequestMapping(path = "/delete-notes", method = RequestMethod.POST)
     public String deleteNotes(HttpSession session, @RequestParam List<Integer> noteId){
