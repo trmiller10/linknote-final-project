@@ -2,76 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e421253-4b2c-4824-999a-21543e8c1a6b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i_2.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o_1.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p_1.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/segments_r" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/tiyironyard/controllers/MainController.class" afterPath="$PROJECT_DIR$/build/classes/main/com/tiyironyard/controllers/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/segments.gen" afterPath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/static/javascript/scripts.js" afterPath="$PROJECT_DIR$/build/resources/main/static/javascript/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/templates/home.mustache" afterPath="$PROJECT_DIR$/build/resources/main/templates/home.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/linknote-final-project/static/javascript/scripts.js" afterPath="$PROJECT_DIR$/out/production/linknote-final-project/static/javascript/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/linknote-final-project/templates/home.mustache" afterPath="$PROJECT_DIR$/out/production/linknote-final-project/templates/home.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/linknote.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/linknote.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js" afterPath="$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/home.mustache" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.mustache" />
     </list>
     <ignored path="linknotefinalproject.iws" />
@@ -298,9 +228,11 @@
       <file leaf-file-name="home.mustache" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="76" column="99" selection-start-line="76" selection-start-column="99" selection-end-line="76" selection-end-column="99" />
-              <folding />
+            <state relative-caret-position="245">
+              <caret line="76" column="123" selection-start-line="76" selection-start-column="100" selection-end-line="76" selection-end-column="123" />
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1584,7 +1516,7 @@
       <workItem from="1466432695853" duration="59821000" />
       <workItem from="1466691999052" duration="25409000" />
       <workItem from="1466871747351" duration="45740000" />
-      <workItem from="1467119796535" duration="43774000" />
+      <workItem from="1467119796535" duration="44303000" />
     </task>
     <servers />
   </component>
@@ -1600,7 +1532,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202743000" />
+    <option name="totallyTimeSpent" value="203272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="23" width="1366" height="689" extended-state="6" />
@@ -2251,9 +2183,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="76" column="99" selection-start-line="76" selection-start-column="99" selection-end-line="76" selection-end-column="99" />
-          <folding />
+        <state relative-caret-position="245">
+          <caret line="76" column="123" selection-start-line="76" selection-start-column="100" selection-end-line="76" selection-end-column="123" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
