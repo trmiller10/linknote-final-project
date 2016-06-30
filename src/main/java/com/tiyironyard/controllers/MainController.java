@@ -13,6 +13,7 @@ import com.tiyironyard.entities.User;
 import com.tiyironyard.repositories.NoteRepository;
 import com.tiyironyard.repositories.TagRepository;
 import com.tiyironyard.repositories.UserRepository;
+import com.tiyironyard.security.PasswordStorage;
 import com.tiyironyard.services.TagAndNoteService;
 import com.tiyironyard.services.TagSearch;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -72,15 +73,17 @@ public class MainController {
 
     @RequestMapping(path = "/login", method = RequestMethod.POST)
     public String loginUser(HttpSession session, String userEmail, String password) throws Exception {
-
-        User user = userRepository.findByUserEmailAndPassword(userEmail, password);
+        User user = userRepository.findByUserEmail(userEmail);
         if (user == null) {
-            user = new User(userEmail, password);
+            user = new User(userEmail, PasswordStorage.createHash(password));
             userRepository.save(user);
-        }
+        } else if (PasswordStorage.verifyPassword(password, user.getPassword())){
+            session.setAttribute("userEmail", userEmail);
+        } else if (!PasswordStorage.verifyPassword(password, user.getPassword())){
         session.setAttribute("userEmail", userEmail);
-
-        return "redirect:/home";
+        throw new Exception("Incorrect password");
+    }
+        return "redirect:/";
 
         /*if (user == null) {
             user = new User(userEmail, password);
@@ -303,6 +306,9 @@ public class MainController {
         if (user == null) {
             return "redirect:/login";
         }
+        if (noteId == null){
+            return "redirect:/home";
+        }
         List<String> joinNoteText = new ArrayList<>();
         for (Integer foundId : noteId) {
             //get the note associated with the current id and user
@@ -330,6 +336,9 @@ public class MainController {
         User user = userRepository.findByUserEmail((String) session.getAttribute("userEmail"));
         if (user == null) {
             return "redirect:/login";
+        }
+        if (noteId == null){
+            return "redirect:/home";
         }
         for(Integer id : noteId){
             noteRepository.delete(noteRepository.findByIdAndUserId(id, user.getId()));
