@@ -50,7 +50,7 @@
 
                 <div class="row bulkAddTags">
                     <input type="text" class="seven columns" name="selectTag">
-                    <input class="five columns button-primary" value="Tag Checked" type="submit" onclick="setAction('/bulk-tag')">
+                    <input class="five columns button-primary" value="Tag Checked" type="submit" onclick="addChecked()">
                 </div>
                 <div class="row noteActions">
                     <button class="six columns" onclick="mergeNotes()">Merge</button>
@@ -60,6 +60,9 @@
             </form>
         </div>
         <div class="seven columns">
+            <div class="row">
+                <h1>LINKNOTE</h1>
+            </div>
             <form action="/add-note" method="post" id="textForm">
                 {{#note}}
                 <div>

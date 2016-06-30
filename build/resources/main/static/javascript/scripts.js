@@ -13,7 +13,12 @@
         document.getElementById("noteListActions").setAttribute("action", "/merge-notes");
     }
 }*/
-
+function addChecked(){
+    msg = "Added tags to checked notes!";
+    alert(msg);
+    document.getElementById("noteListActions").setAttribute("action", "/bulk-tag");
+    console.log("Adding tags in bulk")
+}
 function mergeNotes(){
     msg = "Merged note added to your list!";
     alert(msg);

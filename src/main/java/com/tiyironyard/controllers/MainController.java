@@ -1,10 +1,7 @@
 package com.tiyironyard.controllers;
 
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.StringJoiner;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import com.tiyironyard.entities.Note;
@@ -310,23 +307,29 @@ public class MainController {
             return "redirect:/home";
         }
         List<String> joinNoteText = new ArrayList<>();
+        Set<Tag> noteTags = new HashSet<>();
+        List<String> joinTag = new ArrayList<>();
         for (Integer foundId : noteId) {
             //get the note associated with the current id and user
             Note checkedNote = noteRepository.findByIdAndUserId(foundId, user.getId());
             //pull out that note's text
             String text = checkedNote.getNoteText();
 
-            Set<Tag> noteTags = checkedNote.getTags();
-
+            noteTags = checkedNote.getTags();
+            for (Tag tag : noteTags){
+                String tagName = tag.getTagName();
+                joinTag.add(tagName);
+            }
             joinNoteText.add(text);
         }
 
         String superNoteText = joinNoteText.stream().collect(Collectors.joining("\n"));
 
+        String superTagSelect = joinTag.stream().collect(Collectors.joining(", "));
         //for each tagName in that note's tag set
-        for (String tagName : selectTag) {
-            tagAndNoteService.saveNoteAndTags(user, superNoteText, tagName, id);
-        }
+
+        tagAndNoteService.saveNoteAndTags(user, superNoteText, superTagSelect, id);
+
 
         return "redirect:/home";
     }

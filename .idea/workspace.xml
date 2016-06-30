@@ -2,16 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e421253-4b2c-4824-999a-21543e8c1a6b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_i_2.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_j.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_l.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_m.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_o_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_p_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_q.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/segments_r" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/tiyironyard/controllers/MainController.class" afterPath="$PROJECT_DIR$/build/classes/main/com/tiyironyard/controllers/MainController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/segments.gen" afterPath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/segments.gen" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/static/javascript/scripts.js" afterPath="$PROJECT_DIR$/build/resources/main/static/javascript/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/templates/home.mustache" afterPath="$PROJECT_DIR$/build/resources/main/templates/home.mustache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/linknote-final-project/static/javascript/scripts.js" afterPath="$PROJECT_DIR$/out/production/linknote-final-project/static/javascript/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/linknote-final-project/templates/home.mustache" afterPath="$PROJECT_DIR$/out/production/linknote-final-project/templates/home.mustache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/linknote.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/linknote.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js" afterPath="$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/home.mustache" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" />
     </list>
     <ignored path="linknotefinalproject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -125,11 +186,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java">
+      <file leaf-file-name="TagSearch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/services/TagSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="310" column="9" selection-start-line="310" selection-start-column="9" selection-end-line="310" selection-end-column="9" />
+            <state relative-caret-position="269">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,19 +198,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/repositories/UserRepository.java">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+            <state relative-caret-position="130">
+              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="finalproject.public.users" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TagAndNoteService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/services/TagAndNoteService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="915">
+              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="finalproject.public.notes" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/20a09fa0/9762307e-f7dd-4761-b044-f74c73b0fcdb/finalproject.public.notes">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="finalproject.public.users" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/20a09fa0/9762307e-f7dd-4761-b044-f74c73b0fcdb/finalproject.public.users">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -190,8 +276,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="44">
+              <caret line="18" column="80" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -199,11 +285,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.mustache" pinned="false" current-in-tab="false">
+      <file leaf-file-name="linknote.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/linknote.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="6" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.mustache" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
+            <state relative-caret-position="275">
+              <caret line="76" column="99" selection-start-line="76" selection-start-column="99" selection-end-line="76" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -214,36 +310,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
               <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="linknote.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/linknote.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-230">
-              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="18" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -628,7 +694,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/services/StopWordSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/repositories/NoteRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/services/TagAndNoteService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/linknote.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/repositories/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/security/SecurityConfig.java" />
@@ -636,10 +701,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/application-heroku.properties" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/security/PasswordStorage.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/home.mustache" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.mustache" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/linknote.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.mustache" />
       </list>
     </option>
   </component>
@@ -657,7 +723,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-54" />
+    <option name="x" value="6" />
     <option name="y" value="23" />
     <option name="width" value="1366" />
     <option name="height" value="689" />
@@ -1518,7 +1584,7 @@
       <workItem from="1466432695853" duration="59821000" />
       <workItem from="1466691999052" duration="25409000" />
       <workItem from="1466871747351" duration="45740000" />
-      <workItem from="1467119796535" duration="38460000" />
+      <workItem from="1467119796535" duration="43774000" />
     </task>
     <servers />
   </component>
@@ -1534,10 +1600,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197429000" />
+    <option name="totallyTimeSpent" value="202743000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-54" y="23" width="1366" height="689" extended-state="0" />
+    <frame x="6" y="23" width="1366" height="689" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1549,7 +1615,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24120604" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24120604" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1563,7 +1629,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11480363" sideWeight="0.5203252" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13735344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2512563" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1633,19 +1699,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>250</line>
+          <line>247</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>243</line>
+          <line>240</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>225</line>
+          <line>222</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
@@ -1669,61 +1735,61 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>105</line>
+          <line>102</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>144</line>
+          <line>141</line>
           <properties />
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>214</line>
+          <line>211</line>
           <properties />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>281</line>
+          <line>278</line>
           <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>198</line>
+          <line>195</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>123</line>
+          <line>120</line>
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>184</line>
+          <line>181</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>311</line>
+          <line>308</line>
           <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>335</line>
+          <line>338</line>
           <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>151</line>
+          <line>148</line>
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
@@ -1915,19 +1981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/20a09fa0/9762307e-f7dd-4761-b044-f74c73b0fcdb/finalproject.public.notes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/20a09fa0/9762307e-f7dd-4761-b044-f74c73b0fcdb/finalproject.public.note_tag">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -2045,26 +2098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/services/TagSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/services/TagAndNoteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="57" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/security/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -2093,14 +2126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/linknote.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -2144,34 +2169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="310" column="9" selection-start-line="310" selection-start-column="9" selection-end-line="310" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.mustache">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -2189,6 +2186,73 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/20a09fa0/9762307e-f7dd-4761-b044-f74c73b0fcdb/finalproject.public.notes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/services/TagAndNoteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="18" column="80" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/services/TagSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/linknote.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="76" column="99" selection-start-line="76" selection-start-column="99" selection-end-line="76" selection-end-column="99" />
           <folding />
         </state>
       </provider>

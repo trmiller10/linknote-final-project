@@ -1,5 +1,5 @@
 textarea{
-    height: 29em;
+    height: 10em;
     overflow: scroll;
 }
 .noteSummary{
@@ -15,7 +15,7 @@ textarea{
     border: 1px solid lightgray;
 }
 #textForm{
-    margin-top: 5em;
+    /*margin-top: 5em;*/
 }
 #logoutLink{
     margin-top: 2em;
