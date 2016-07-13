@@ -41,8 +41,6 @@ public class MainController {
     @Autowired
     private TagSearch tagSearch;
 
-    //@Autowired
-    //private StopWordSearch stopWordSearch;
 
     @Autowired
     private TagAndNoteService tagAndNoteService;
@@ -81,19 +79,6 @@ public class MainController {
         throw new Exception("Incorrect password");
     }
         return "redirect:/";
-
-        /*if (user == null) {
-            user = new User(userEmail, password);
-            userRepository.save(user);
-            session.setAttribute("userEmail", userEmail);
-
-            return "redirect:/home";
-
-        } else if (!user.getUserEmail().equals(userEmail) || !user.getPassword().equals(password)){
-            return "redirect:/login";
-        }
-        return "redirect:/login";
-    }*/
     }
 
     @RequestMapping(path = "/logout", method = RequestMethod.GET)
@@ -133,14 +118,24 @@ public class MainController {
 
         if (searchInput != null) {
             //try {
-                List<Tag> tagResults = tagSearch.search(searchInput);
+            List<Tag> tagResults = tagSearch.search(searchInput);
             //} catch (EmptyQueryException e) {
             //    List<Tag> tagResults = stopWordSearch.search(searchInput);
             //}
-            for (Tag tag : tagResults) {
-                List<Note> gotNotes = tag.getNotes();
-                userNotes.addAll(gotNotes);
+            List<Note> noteSet = new ArrayList<>();
+            Set<Note> filterNotes = new HashSet<>();
+            List<Note> filteredList = new ArrayList<>();
+            for(Tag tag : tagResults){
+                noteSet = tag.getNotes();
             }
+            filterNotes.addAll(noteSet);
+            for(Note note : filterNotes){
+                if(note.getTags().containsAll(tagResults)){
+                    filteredList.add(note);
+                }
+            }
+
+            userNotes = filteredList;
 
         } else {
             userNotes = user.getNotes();
@@ -182,7 +177,6 @@ public class MainController {
         if (user == null) {
             return "redirect:/login";
         }
-
 
         tagAndNoteService.saveNoteAndTags(user, inputText, tagInput, id);
 
@@ -293,7 +287,7 @@ public class MainController {
 
         return "redirect:/home";
     }
-
+//TODO: catch errors when user has nothing selected
     @RequestMapping(path = "/merge-notes", method = RequestMethod.POST)
     public String mergeNotes(HttpSession session,
                              Integer id,

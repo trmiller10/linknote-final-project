@@ -9,5 +9,4 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface NoteRepository extends CrudRepository<Note, Integer> {
     Note findByIdAndUserId(Integer id, Integer userId);
-
 }
