@@ -2,32 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e421253-4b2c-4824-999a-21543e8c1a6b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1s.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1s.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1s.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1s.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1s.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1s.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1s.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1s.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1s_1.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1t.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1v.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1v_1.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1w.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1w_1.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/_1x.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/segments_1v" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/write.lock" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/tiyironyard/controllers/MainController.class" afterPath="$PROJECT_DIR$/build/classes/main/com/tiyironyard/controllers/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/tiyironyard/entities/Note.class" afterPath="$PROJECT_DIR$/build/classes/main/com/tiyironyard/entities/Note.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/tiyironyard/services/TagSearch.class" afterPath="$PROJECT_DIR$/build/classes/main/com/tiyironyard/services/TagSearch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/segments.gen" afterPath="$PROJECT_DIR$/indexes/com.tiyironyard.entities.Tag/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/Note.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/Note.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiyironyard/repositories/NoteRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiyironyard/repositories/NoteRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiyironyard/services/TagSearch.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiyironyard/services/TagSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js" afterPath="$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/home.mustache" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" />
     </list>
     <ignored path="linknotefinalproject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -185,26 +163,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Tag.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/Tag.java">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="179">
+              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding>
-                <element signature="e#1182#1183#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java">
+      <file leaf-file-name="linknote.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/linknote.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="405">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvocableHandlerMethod.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.6.RELEASE/969d3b628a6b1e2d77bad07669539b27b35ce59a/spring-web-4.2.6.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="finalproject.public.notes" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/20a09fa0/9762307e-f7dd-4761-b044-f74c73b0fcdb/finalproject.public.notes">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -224,69 +235,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NoteSearch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/services/NoteSearch.java">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="57" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1468423474000" expanded="false" signature="1529:1559" ph="/unchecked/" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StopWordSearch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/services/StopWordSearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="325">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinknoteFinalProjectApplicationTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tiyironyard/LinknoteFinalProjectApplicationTests.java">
+      <file leaf-file-name="home.mustache" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="165">
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersistentSet.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/4.3.11.Final/404c69aa1781893987d426f4eec08020ae1f41a0/hibernate-core-4.3.11.Final-sources.jar!/org/hibernate/collection/internal/PersistentSet.java">
+      <file leaf-file-name="login.mustache" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractPersistentCollection.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/4.3.11.Final/404c69aa1781893987d426f4eec08020ae1f41a0/hibernate-core-4.3.11.Final-sources.jar!/org/hibernate/collection/internal/AbstractPersistentCollection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-              <folding>
-                <element signature="e#4362#4363#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Note.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/Note.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-              <folding>
-                <element signature="e#2437#2438#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -297,7 +271,7 @@
             <state relative-caret-position="190">
               <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1379#1409#1" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -686,15 +660,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/application-heroku.properties" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/security/PasswordStorage.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.mustache" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/linknote.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/home.mustache" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/repositories/NoteRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/Note.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/services/TagSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/services/NoteSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.mustache" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.mustache" />
       </list>
     </option>
   </component>
@@ -712,6 +686,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-6" />
     <option name="y" value="23" />
     <option name="width" value="1366" />
     <option name="height" value="677" />
@@ -829,6 +804,92 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linknote-final-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linknote-final-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linknote-final-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linknote-final-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linknote-final-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linknote-final-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1572,7 +1633,7 @@
       <workItem from="1467735357809" duration="40000" />
       <workItem from="1467849485234" duration="1877000" />
       <workItem from="1468181991191" duration="19357000" />
-      <workItem from="1468422527344" duration="1604000" />
+      <workItem from="1468422527344" duration="8290000" />
     </task>
     <servers />
   </component>
@@ -1588,11 +1649,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231009000" />
+    <option name="totallyTimeSpent" value="237695000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="677" extended-state="6" />
-    <editor active="false" />
+    <frame x="-6" y="23" width="1366" height="677" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1617,7 +1678,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15256798" sideWeight="0.5633484" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37094018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37094018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1687,19 +1748,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>241</line>
+          <line>255</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>234</line>
+          <line>248</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>216</line>
+          <line>230</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
@@ -1723,72 +1784,78 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>87</line>
+          <line>101</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>205</line>
+          <line>219</line>
           <properties />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>272</line>
+          <line>286</line>
           <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>189</line>
+          <line>203</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>105</line>
-          <properties />
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>176</line>
+          <line>190</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>302</line>
+          <line>316</line>
           <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>332</line>
+          <line>346</line>
           <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>143</line>
+          <line>157</line>
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>120</line>
+          <line>134</line>
           <properties />
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
-          <line>130</line>
+          <line>144</line>
           <properties />
           <option name="timeStamp" value="69" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
+          <line>212</line>
+          <properties />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="70" />
+      <option name="time" value="73" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
@@ -1858,13 +1925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/security/SecurityConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-default.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -1901,25 +1961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/linknote.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/20a09fa0/9762307e-f7dd-4761-b044-f74c73b0fcdb/finalproject.public.notes">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/20a09fa0/9762307e-f7dd-4761-b044-f74c73b0fcdb/finalproject.public.note_tag">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1989,27 +2030,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="18" column="80" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -2100,14 +2120,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.6.RELEASE/969d3b628a6b1e2d77bad07669539b27b35ce59a/spring-web-4.2.6.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/repositories/TagRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -2144,7 +2156,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2153,9 +2167,342 @@
         <state relative-caret-position="422">
           <caret line="57" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1468423474000" expanded="false" signature="1529:1559" ph="/unchecked/" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/Note.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1612#1613#0" expanded="false" />
+            <element signature="e#1648#1649#0" expanded="false" />
+            <element signature="e#1945#1946#0" expanded="false" />
+            <element signature="e#1985#1986#0" expanded="false" />
+            <element signature="e#2011#2012#0" expanded="false" />
+            <element signature="e#2036#2037#0" expanded="false" />
+            <element signature="e#2069#2070#0" expanded="false" />
+            <element signature="e#2097#2098#0" expanded="false" />
+            <element signature="e#2132#2133#0" expanded="false" />
+            <element signature="e#2163#2164#0" expanded="false" />
+            <element signature="e#2211#2212#0" expanded="false" />
+            <element signature="e#2251#2252#0" expanded="false" />
+            <element signature="e#2280#2281#0" expanded="false" />
+            <element signature="e#2307#2308#0" expanded="false" />
+            <element signature="e#2345#2346#0" expanded="false" />
+            <element signature="e#2377#2378#0" expanded="false" />
+            <element signature="e#2479#2480#0" expanded="false" />
+            <element signature="e#2511#2512#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/4.3.11.Final/404c69aa1781893987d426f4eec08020ae1f41a0/hibernate-core-4.3.11.Final-sources.jar!/org/hibernate/collection/internal/AbstractPersistentCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32205#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3632#3633#0" expanded="false" />
+            <element signature="e#3661#3662#0" expanded="false" />
+            <element signature="e#3706#3707#0" expanded="false" />
+            <element signature="e#3724#3725#0" expanded="false" />
+            <element signature="e#3774#3775#0" expanded="false" />
+            <element signature="e#3791#3792#0" expanded="false" />
+            <element signature="e#3844#3845#0" expanded="false" />
+            <element signature="e#3870#3871#0" expanded="false" />
+            <element signature="e#3916#3917#0" expanded="false" />
+            <element signature="e#3935#3936#0" expanded="false" />
+            <element signature="e#3981#3982#0" expanded="false" />
+            <element signature="e#4001#4002#0" expanded="false" />
+            <element signature="e#4042#4043#0" expanded="false" />
+            <element signature="e#4061#4062#0" expanded="false" />
+            <element signature="e#4122#4123#0" expanded="false" />
+            <element signature="e#4150#4151#0" expanded="false" />
+            <element signature="e#4451#4481#0" expanded="false" />
+            <element signature="e#4693#5425#0" expanded="false" />
+            <element signature="e#5424#5425#0" expanded="false" />
+            <element signature="e#8789#9351#0" expanded="false" />
+            <element signature="e#9350#9351#0" expanded="false" />
+            <element signature="e#9632#10198#0" expanded="false" />
+            <element signature="e#10197#10198#0" expanded="false" />
+            <element signature="e#11422#11423#0" expanded="false" />
+            <element signature="e#11446#11447#0" expanded="false" />
+            <element signature="e#11842#11872#0" expanded="false" />
+            <element signature="e#12146#12176#0" expanded="false" />
+            <element signature="e#12460#12490#0" expanded="false" />
+            <element signature="e#12707#12737#0" expanded="false" />
+            <element signature="e#13039#13069#0" expanded="false" />
+            <element signature="e#13455#13485#0" expanded="false" />
+            <element signature="e#13827#13857#0" expanded="false" />
+            <element signature="e#14723#14724#0" expanded="false" />
+            <element signature="e#14741#14742#0" expanded="false" />
+            <element signature="e#15593#15790#0" expanded="false" />
+            <element signature="e#15789#15790#0" expanded="false" />
+            <element signature="e#16599#16600#0" expanded="false" />
+            <element signature="e#16631#16632#0" expanded="false" />
+            <element signature="e#21346#21376#0" expanded="false" />
+            <element signature="e#21421#21422#0" expanded="false" />
+            <element signature="e#21486#21487#0" expanded="false" />
+            <element signature="e#21539#21540#0" expanded="false" />
+            <element signature="e#21564#21565#0" expanded="false" />
+            <element signature="e#21616#21617#0" expanded="false" />
+            <element signature="e#21634#21635#0" expanded="false" />
+            <element signature="e#21692#21693#0" expanded="false" />
+            <element signature="e#21728#21729#0" expanded="false" />
+            <element signature="e#21915#21916#0" expanded="false" />
+            <element signature="e#21983#21984#0" expanded="false" />
+            <element signature="e#22029#22030#0" expanded="false" />
+            <element signature="e#22078#22079#0" expanded="false" />
+            <element signature="e#22120#22121#0" expanded="false" />
+            <element signature="e#22174#22175#0" expanded="false" />
+            <element signature="e#22249#22281#0" expanded="false" />
+            <element signature="e#23285#23286#0" expanded="false" />
+            <element signature="e#23306#23307#0" expanded="false" />
+            <element signature="e#23438#23439#0" expanded="false" />
+            <element signature="e#23461#23462#0" expanded="false" />
+            <element signature="e#23503#23504#0" expanded="false" />
+            <element signature="e#23532#23533#0" expanded="false" />
+            <element signature="e#23570#23571#0" expanded="false" />
+            <element signature="e#23596#23597#0" expanded="false" />
+            <element signature="e#23822#23823#0" expanded="false" />
+            <element signature="e#23845#23846#0" expanded="false" />
+            <element signature="e#23862#23894#0" expanded="false" />
+            <element signature="e#23998#23999#0" expanded="false" />
+            <element signature="e#24027#24028#0" expanded="false" />
+            <element signature="e#24073#24074#0" expanded="false" />
+            <element signature="e#24106#24107#0" expanded="false" />
+            <element signature="e#24144#24145#0" expanded="false" />
+            <element signature="e#24170#24171#0" expanded="false" />
+            <element signature="e#24210#24211#0" expanded="false" />
+            <element signature="e#24241#24242#0" expanded="false" />
+            <element signature="e#24283#24284#0" expanded="false" />
+            <element signature="e#24313#24314#0" expanded="false" />
+            <element signature="e#24357#24358#0" expanded="false" />
+            <element signature="e#24392#24393#0" expanded="false" />
+            <element signature="e#24480#24512#0" expanded="false" />
+            <element signature="e#24702#24703#0" expanded="false" />
+            <element signature="e#24725#24726#0" expanded="false" />
+            <element signature="e#24742#24774#0" expanded="false" />
+            <element signature="e#24863#24895#0" expanded="false" />
+            <element signature="e#25097#25098#0" expanded="false" />
+            <element signature="e#25130#25131#0" expanded="false" />
+            <element signature="e#25147#25177#0" expanded="false" />
+            <element signature="e#25221#25222#0" expanded="false" />
+            <element signature="e#25257#25258#0" expanded="false" />
+            <element signature="e#25299#25300#0" expanded="false" />
+            <element signature="e#25328#25329#0" expanded="false" />
+            <element signature="e#25372#25373#0" expanded="false" />
+            <element signature="e#25423#25424#0" expanded="false" />
+            <element signature="e#25532#25562#0" expanded="false" />
+            <element signature="e#25667#25697#0" expanded="false" />
+            <element signature="e#25820#25821#0" expanded="false" />
+            <element signature="e#25846#25847#0" expanded="false" />
+            <element signature="e#25889#25890#0" expanded="false" />
+            <element signature="e#25918#25919#0" expanded="false" />
+            <element signature="e#25935#25967#0" expanded="false" />
+            <element signature="e#26010#26011#0" expanded="false" />
+            <element signature="e#26046#26047#0" expanded="false" />
+            <element signature="e#26173#26174#0" expanded="false" />
+            <element signature="e#26198#26199#0" expanded="false" />
+            <element signature="e#26215#26247#0" expanded="false" />
+            <element signature="e#26353#26385#0" expanded="false" />
+            <element signature="e#26475#26507#0" expanded="false" />
+            <element signature="e#26607#26639#0" expanded="false" />
+            <element signature="e#26853#26854#0" expanded="false" />
+            <element signature="e#26887#26888#0" expanded="false" />
+            <element signature="e#26904#26934#0" expanded="false" />
+            <element signature="e#26978#26979#0" expanded="false" />
+            <element signature="e#27015#27016#0" expanded="false" />
+            <element signature="e#27057#27058#0" expanded="false" />
+            <element signature="e#27086#27087#0" expanded="false" />
+            <element signature="e#27132#27133#0" expanded="false" />
+            <element signature="e#27165#27166#0" expanded="false" />
+            <element signature="e#27207#27208#0" expanded="false" />
+            <element signature="e#27237#27238#0" expanded="false" />
+            <element signature="e#27281#27282#0" expanded="false" />
+            <element signature="e#27333#27334#0" expanded="false" />
+            <element signature="e#27383#27384#0" expanded="false" />
+            <element signature="e#27420#27421#0" expanded="false" />
+            <element signature="e#27472#27473#0" expanded="false" />
+            <element signature="e#27532#27533#0" expanded="false" />
+            <element signature="e#27589#27590#0" expanded="false" />
+            <element signature="e#27652#27653#0" expanded="false" />
+            <element signature="e#27851#27881#0" expanded="false" />
+            <element signature="e#27987#28017#0" expanded="false" />
+            <element signature="e#28123#28155#0" expanded="false" />
+            <element signature="e#28272#28273#0" expanded="false" />
+            <element signature="e#28299#28300#0" expanded="false" />
+            <element signature="e#28350#28351#0" expanded="false" />
+            <element signature="e#28386#28387#0" expanded="false" />
+            <element signature="e#28429#28430#0" expanded="false" />
+            <element signature="e#28459#28460#0" expanded="false" />
+            <element signature="e#28476#28508#0" expanded="false" />
+            <element signature="e#28551#28552#0" expanded="false" />
+            <element signature="e#28588#28589#0" expanded="false" />
+            <element signature="e#29004#29047#0" expanded="false" />
+            <element signature="e#32017#32018#0" expanded="false" />
+            <element signature="e#32065#32066#0" expanded="false" />
+            <element signature="e#32105#32106#0" expanded="false" />
+            <element signature="e#32124#32125#0" expanded="false" />
+            <element signature="e#32174#32175#0" expanded="false" />
+            <element signature="e#32199#32200#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/Tag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1236#1237#0" expanded="false" />
+            <element signature="e#1274#1275#0" expanded="false" />
+            <element signature="e#1463#1464#0" expanded="false" />
+            <element signature="e#1488#1489#0" expanded="false" />
+            <element signature="e#1521#1522#0" expanded="false" />
+            <element signature="e#1549#1550#0" expanded="false" />
+            <element signature="e#1583#1584#0" expanded="false" />
+            <element signature="e#1613#1614#0" expanded="false" />
+            <element signature="e#1659#1660#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#1734#1735#0" expanded="false" />
+            <element signature="e#1762#1763#0" expanded="false" />
+            <element signature="e#1808#1809#0" expanded="false" />
+            <element signature="e#1842#1843#0" expanded="false" />
+            <element signature="e#1877#1878#0" expanded="false" />
+            <element signature="e#1905#1906#0" expanded="false" />
+            <element signature="e#1950#1951#0" expanded="false" />
+            <element signature="e#1984#1985#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/4.3.11.Final/404c69aa1781893987d426f4eec08020ae1f41a0/hibernate-core-4.3.11.Final-sources.jar!/org/hibernate/collection/internal/PersistentSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#12697#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2347#2348#0" expanded="false" />
+            <element signature="e#2370#2371#0" expanded="false" />
+            <element signature="e#2944#2977#0" expanded="false" />
+            <element signature="e#4105#4106#0" expanded="false" />
+            <element signature="e#4157#4158#0" expanded="false" />
+            <element signature="e#4352#4382#0" expanded="false" />
+            <element signature="e#4941#4942#0" expanded="false" />
+            <element signature="e#4968#4969#0" expanded="false" />
+            <element signature="e#4983#5013#0" expanded="false" />
+            <element signature="e#5033#5034#0" expanded="false" />
+            <element signature="e#5088#5089#0" expanded="false" />
+            <element signature="e#5103#5133#0" expanded="false" />
+            <element signature="e#5160#5161#0" expanded="false" />
+            <element signature="e#5221#5222#0" expanded="false" />
+            <element signature="e#5417#5447#0" expanded="false" />
+            <element signature="e#5550#5580#0" expanded="false" />
+            <element signature="e#5660#5690#0" expanded="false" />
+            <element signature="e#6614#6644#0" expanded="false" />
+            <element signature="e#6752#6782#0" expanded="false" />
+            <element signature="e#7024#7054#0" expanded="false" />
+            <element signature="e#7233#7263#0" expanded="false" />
+            <element signature="e#7511#7541#0" expanded="false" />
+            <element signature="e#7750#7780#0" expanded="false" />
+            <element signature="e#7860#7890#0" expanded="false" />
+            <element signature="e#8267#8297#0" expanded="false" />
+            <element signature="e#8392#8422#0" expanded="false" />
+            <element signature="e#8547#8577#0" expanded="false" />
+            <element signature="e#8634#8635#0" expanded="false" />
+            <element signature="e#8662#8663#0" expanded="false" />
+            <element signature="e#8677#8707#0" expanded="false" />
+            <element signature="e#9070#9100#0" expanded="false" />
+            <element signature="e#9931#9961#0" expanded="false" />
+            <element signature="e#10394#10424#0" expanded="false" />
+            <element signature="e#10491#10492#0" expanded="false" />
+            <element signature="e#10510#10511#0" expanded="false" />
+            <element signature="e#10525#10555#0" expanded="false" />
+            <element signature="e#10594#10595#0" expanded="false" />
+            <element signature="e#10613#10614#0" expanded="false" />
+            <element signature="e#10628#10658#0" expanded="false" />
+            <element signature="e#10823#10853#0" expanded="false" />
+            <element signature="e#10894#10895#0" expanded="false" />
+            <element signature="e#10913#10914#0" expanded="false" />
+            <element signature="e#10928#10958#0" expanded="false" />
+            <element signature="e#11117#11189#0" expanded="false" />
+            <element signature="e#11285#11315#0" expanded="false" />
+            <element signature="e#11392#11422#0" expanded="false" />
+            <element signature="e#11470#11471#0" expanded="false" />
+            <element signature="e#11488#11489#0" expanded="false" />
+            <element signature="e#11503#11533#0" expanded="false" />
+            <element signature="e#11579#11580#0" expanded="false" />
+            <element signature="e#11608#11609#0" expanded="false" />
+            <element signature="e#11696#11697#0" expanded="false" />
+            <element signature="e#11716#11717#0" expanded="false" />
+            <element signature="e#11766#11767#0" expanded="false" />
+            <element signature="e#11786#11787#0" expanded="false" />
+            <element signature="e#12046#12047#0" expanded="false" />
+            <element signature="e#12073#12074#0" expanded="false" />
+            <element signature="e#12090#12120#0" expanded="false" />
+            <element signature="e#12145#12146#0" expanded="false" />
+            <element signature="e#12170#12171#0" expanded="false" />
+            <element signature="e#12220#12221#0" expanded="false" />
+            <element signature="e#12241#12242#0" expanded="false" />
+            <element signature="e#12284#12285#0" expanded="false" />
+            <element signature="e#12304#12305#0" expanded="false" />
+            <element signature="e#12429#12430#0" expanded="false" />
+            <element signature="e#12456#12457#0" expanded="false" />
+            <element signature="e#12473#12503#0" expanded="false" />
+            <element signature="e#12528#12529#0" expanded="false" />
+            <element signature="e#12556#12557#0" expanded="false" />
+            <element signature="e#12606#12607#0" expanded="false" />
+            <element signature="e#12626#12627#0" expanded="false" />
+            <element signature="e#12669#12670#0" expanded="false" />
+            <element signature="e#12690#12691#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/services/TagSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#1379#1409#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/javascript/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/20a09fa0/9762307e-f7dd-4761-b044-f74c73b0fcdb/finalproject.public.notes">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -2172,61 +2519,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/Note.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.6.RELEASE/969d3b628a6b1e2d77bad07669539b27b35ce59a/spring-web-4.2.6.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="e#2437#2438#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/4.3.11.Final/404c69aa1781893987d426f4eec08020ae1f41a0/hibernate-core-4.3.11.Final-sources.jar!/org/hibernate/collection/internal/AbstractPersistentCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding>
-            <element signature="e#4362#4363#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/Tag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="e#1182#1183#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/4.3.11.Final/404c69aa1781893987d426f4eec08020ae1f41a0/hibernate-core-4.3.11.Final-sources.jar!/org/hibernate/collection/internal/PersistentSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+        <state relative-caret-position="242">
+          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/services/TagSearch.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/entities/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tiyironyard/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        <state relative-caret-position="179">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/linknote.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -36,4 +36,3 @@ function deleteNotes(){
     }
     console.log("Deleting notes.");
 }
-

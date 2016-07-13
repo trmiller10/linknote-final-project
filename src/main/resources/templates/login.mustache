@@ -18,14 +18,21 @@
         <input type="password" placeholder="Enter your password" name="password"/>
         <input class="button-primary" value="Login" type="submit">
     </form>
+    {{#notFound}}
+        Incorrect email and/or password.
+    {{/notFound}}
+
 </div>
 <div>
     <h3>NEW USER</h3>
-    <form action="/login" method="post">
-        <input type="text" placeholder="Enter an email" name="userEmail"/>
-        <input type="password" placeholder="Enter a password" name="password"/>
+    <form action="/create-user" method="post">
+        <input type="text" placeholder="Enter an email" name="newEmail"/>
+        <input type="password" placeholder="Enter a password" name="newPassword"/>
         <input class="button-primary" value="Create user" type="submit">
     </form>
+    <div hidden class="warning">
+        <p>This email address is already in use.</p>
+    </div>
 </div>
 </body>
 </html>

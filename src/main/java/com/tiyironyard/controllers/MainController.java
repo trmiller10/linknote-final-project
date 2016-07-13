@@ -13,7 +13,9 @@ import com.tiyironyard.repositories.UserRepository;
 import com.tiyironyard.security.PasswordStorage;
 import com.tiyironyard.services.TagAndNoteService;
 import com.tiyironyard.services.TagSearch;
+import org.hibernate.NonUniqueResultException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.ExceptionDepthComparator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -67,18 +69,30 @@ public class MainController {
     }
 
     @RequestMapping(path = "/login", method = RequestMethod.POST)
-    public String loginUser(HttpSession session, String userEmail, String password) throws Exception {
+    public String loginUser(HttpSession session, Model model, String userEmail, String password) throws Exception {
         User user = userRepository.findByUserEmail(userEmail);
         if (user == null) {
-            user = new User(userEmail, PasswordStorage.createHash(password));
-            userRepository.save(user);
+            throw new Exception("Incorrect email and/or password");
         } else if (PasswordStorage.verifyPassword(password, user.getPassword())){
             session.setAttribute("userEmail", userEmail);
         } else if (!PasswordStorage.verifyPassword(password, user.getPassword())){
         session.setAttribute("userEmail", userEmail);
-        throw new Exception("Incorrect password");
+            throw new Exception("Incorrect email and/or password");
     }
         return "redirect:/";
+    }
+
+    @RequestMapping(path = "/create-user", method = RequestMethod.POST)
+    public String createUser(HttpSession session, Model model, String userEmail, String newEmail, String newPassword) throws Exception {
+        User user = userRepository.findByUserEmail(newEmail);
+        if (user != null) {
+            throw new Exception("Entered email is already in use.");
+        }
+            user = new User(newEmail, PasswordStorage.createHash(newPassword));
+            userRepository.save(user);
+            session.setAttribute("userEmail", newEmail);
+
+        return "redirect:/home";
     }
 
     @RequestMapping(path = "/logout", method = RequestMethod.GET)
